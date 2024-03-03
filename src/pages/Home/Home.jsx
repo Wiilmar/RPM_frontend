@@ -1,6 +1,13 @@
+import Nuevo from "../../components/Nuevo"
+
+
 const Home = ()=>{
     return(
-        <h1>Home</h1>
+
+        <Nuevo>
+            <h1>yo</h1>
+        </Nuevo>
+
     )
 }
 

@@ -3,6 +3,9 @@ import  Logo from "../image/a.png"
 
 
 const Nuevo = () => {
+
+
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -15,7 +18,7 @@ const Nuevo = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <a href="#" className="flex items-center">
-                <img className="h-8 w-auto" src={Logo} alt="Logo de la empresa" />
+              <img className="h-14 w-auto" src={Logo} alt="Logo de la empresa" />
                 
               </a>
             </div>
