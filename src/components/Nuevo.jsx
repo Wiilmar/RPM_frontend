@@ -31,7 +31,7 @@ const Nuevo = () => {
               </div>
             </div>
             <div className="hidden md:block">
-              <a href="#" className=" font-semibold inline-block bg-boton hover:bg-indigo-600 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out">Iniciar Sesión</a>
+              <a href="#" className=" font-semibold inline-block bg-boton hover:bg-azul hover:text-white text-white px-4 py-2 rounded-md transition duration-300 ease-in-out">Iniciar Sesión</a>
             </div>
             <div className="md:hidden">
               <button onClick={toggleMenu} className="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-boton hover:text-white hover:bg-boton focus:outline-none focus:bg-boton focus:text-white">

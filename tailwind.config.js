@@ -9,7 +9,9 @@ export default {
       colors:{
         black: "#000000",
         boton: "#000814",
-        amarillo: "#FFC800"
+        amarillo: "#FFC300",
+        azul: "#003566"
+
       }
     },
   },
