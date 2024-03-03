@@ -1,13 +1,13 @@
 import Nuevo from "../../components/Nuevo"
+import Login from "../../components/Login"
 
 
 const Home = ()=>{
     return(
-
-        <Nuevo>
-            <h1>yo</h1>
-        </Nuevo>
-
+        <>
+        <Nuevo></Nuevo>
+        <Login></Login>
+        </>
     )
 }
 
