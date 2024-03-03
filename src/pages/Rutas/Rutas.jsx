@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getRutas } from "../../api/rutas";
 
 const Rutas = () => {
