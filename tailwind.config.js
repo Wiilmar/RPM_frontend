@@ -12,7 +12,8 @@ export default {
         amarillo: "#FFC300",
         blueLight: "#003566",
         whiteThin: "#E3E3E3",
-        whiteLight: "#D9D9D9"
+        whiteLight: "#D9D9D9",
+        amarilloTitle: "#DBAC00"
       }
     },
   },
