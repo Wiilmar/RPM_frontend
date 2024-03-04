@@ -19,9 +19,10 @@ import picIG from "../../image/logoIG.png"
 
 
 //------ Importacion de mas Imagenes
-import pepe from "../../image/rage.jpg"
-import alvareto from "../../image/alvareto.png"
-import yo from "../../image/yo.png"
+
+import sujetoUno from "../../image/sujetoUno.jpg"
+import sujetoDos from "../../image/sujetoDos.jpg"
+import sujetaTres from "../../image/sujetaTres.jpg"
 
 const Home = () => {
     return (
@@ -141,19 +142,19 @@ const Home = () => {
 
                 <div className="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-3">
                     <div className="p-6">
-                        <img src={pepe} className="h-28 border border-gray-300 rounded-lg" />
-                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-neutral-600 lg:text-3xl">Camilo</h2>
-                        <p className="mx-auto text-2xl leading-relaxed text-gray-500"> Gracias al aplicativo RPM, he podido descubrir rutas y lugares incre&iacute;bles que no conocía previamente. La comunidad de moteros en la aplicación es muy amigable y siempre están dispuestos a compartir consejos y recomendaciones. Definitivamente, ha enriquecido mis experiencias en moto.</p>
+                        <img src={sujetoUno} className="h-28 border border-gray-300 rounded-lg" />
+                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-amarilloTitle lg:text-3xl">Jack Ryder</h2>
+                        <p className="mx-auto text-2xl leading-relaxed text-gray-500">RPM hizo que mi viaje en moto fuera increíblemente suave. Con su ayuda, pude trazar rutas emocionantes a través de paisajes impresionantes y descubrir lugares increíbles en cada parada. ¡Definitivamente es la aplicación perfecta para cualquier motoviajero!</p>
                     </div>
                     <div className="p-6">
-                        <img  src={alvareto}  className="h-28 border border-gray-300 rounded-lg"/>
-                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-neutral-600 lg:text-3xl">Yecid Pardo</h2>
-                        <p className="mx-auto text-2xl leading-relaxed text-gray-500">Como motoviajero, la seguridad es una prioridad para mí. El aplicativo RPM me ha ayudado a encontrar rutas seguras y a conocer las condiciones del camino antes de emprender mi aventura. Además, la función de seguimiento en tiempo real proporciona tranquilidad tanto para mí como para mis seres queridos.</p>
+                        <img  src={sujetoDos}  className="h-28 border border-gray-300 rounded-lg"/>
+                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-amarilloTitle lg:text-3xl">Alexander Kornovich</h2>
+                        <p className="mx-auto text-2xl leading-relaxed text-gray-500">Fue mi compañero constante en mi travesía en moto. Me mantuvo en el camino correcto, me alertó sobre condiciones peligrosas y me ayudó a encontrar los mejores lugares para descansar y disfrutar del paisaje. ¡Una aplicación imprescindible para cualquier motoviajero aventurero!</p>
                     </div>
                     <div className="p-6">
-                        <img  src={yo}  className="h-28 border border-gray-300 rounded-lg"/>
-                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-neutral-600 lg:text-3xl">Alejandra Rodriguez</h2>
-                        <p className="mx-auto text-2xl leading-relaxed text-gray-500">¡El aplicativo RPM ha cambiado por completo la forma en que organizo mis viajes en moto! Ahora puedo planificar rutas incre&iacute;bles, descubrir nuevos destinos y conectarme con otros motociclistas apasionados. Es una herramienta invaluable para cualquier amante de las motos.</p>
+                        <img  src={sujetaTres}  className="h-28 border border-gray-300 rounded-lg"/>
+                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-amarilloTitle lg:text-3xl">Alejandra Rodriguez</h2>
+                        <p className="mx-auto text-2xl leading-relaxed text-gray-500">Con su ayuda, pude planificar rutas emocionantes y seguras, encontrar alojamiento y restaurantes de calidad, y disfrutar al máximo de cada destino. ¡Recomendaría esta aplicación a cualquier motoviajero que quiera una experiencia inolvidable!</p>
                     </div>
                 </div>
             </div>
