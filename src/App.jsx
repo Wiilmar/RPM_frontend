@@ -3,7 +3,7 @@ import Home from './pages/Home/Home'
 import Dashboard from './pages/Dashboard/Dashboard'
 import Rutas from './pages/Rutas/Rutas'
 import Users from './pages/Users/Users'
-import Nuevo from './components/Nuevo'
+import Nuevo from './components/Nav'
 
 function App() {
   return (

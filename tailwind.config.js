@@ -8,12 +8,11 @@ export default {
     extend: {
       colors:{
         black: "#000000",
-        boton: "#000814",
+        blueDark: "#000814",
         amarillo: "#FFC300",
-        azul: "#003566",
-        azulo: "#003566",
-        blanconotanblanco:"#E3E3E3"
-
+        blueLight: "#003566",
+        blanconotanblanco:"#E3E3E3",
+        whiteLight: "#D9D9D9"
       }
     },
   },
