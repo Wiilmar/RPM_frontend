@@ -11,7 +11,7 @@ export default {
         blueDark: "#000814",
         amarillo: "#FFC300",
         blueLight: "#003566",
-        blanconotanblanco:"#E3E3E3",
+        whiteThin: "#E3E3E3",
         whiteLight: "#D9D9D9"
       }
     },
