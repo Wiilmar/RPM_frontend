@@ -141,6 +141,7 @@ export default Home
 
 /*
 *TAREAS PENDIENTES 
+
 toDo: Cambiar imagenes del modulo "Quienes Somos?"
 toDO: Corregir problemas de encaje con el footer - DANIEL 
 */
