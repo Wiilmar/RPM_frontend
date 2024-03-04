@@ -15,6 +15,11 @@ import picQvision from "../../image/Home/pic_Qvision.png"
 import picQvalores from "../../image/Home/pic_Qvalores.png"
 import picTyecid from "../../image/Home/pic_Tyecid.png"
 
+//------ Importacion de mas Imagenes
+import pepe from "../../image/rage.jpg"
+import alvareto from "../../image/alvareto.png"
+import yo from "../../image/yo.png"
+
 const Home = () => {
     return (
       <>
@@ -122,6 +127,36 @@ const Home = () => {
         </section>
         
 
+
+        {/*el pepeeeeee*/}
+
+        <section>
+            <div className="relative items-center w-full px-5 py-10 mx-auto md:px-12 lg:px-24 max-w-7xl">
+                <div className="flex flex-col text-center w-full ">
+                    <h1 className="text-5xl font-bold title-font py-20 text-black">¡Nuestras Experiencias!</h1>
+                </div>
+
+                <div className="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-3">
+                    <div className="p-6">
+                        <img src={pepe} className="h-28 border border-gray-300 rounded-lg" />
+                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-neutral-600 lg:text-3xl">Camilo</h2>
+                        <p className="mx-auto text-2xl leading-relaxed text-gray-500"> Gracias al aplicativo RPM, he podido descubrir rutas y lugares incre&iacute;bles que no conocía previamente. La comunidad de moteros en la aplicación es muy amigable y siempre están dispuestos a compartir consejos y recomendaciones. Definitivamente, ha enriquecido mis experiencias en moto.</p>
+                    </div>
+                    <div className="p-6">
+                        <img  src={alvareto}  className="h-28 border border-gray-300 rounded-lg"/>
+                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-neutral-600 lg:text-3xl">Yecid Pardo</h2>
+                        <p className="mx-auto text-2xl leading-relaxed text-gray-500">Como motoviajero, la seguridad es una prioridad para mí. El aplicativo RPM me ha ayudado a encontrar rutas seguras y a conocer las condiciones del camino antes de emprender mi aventura. Además, la función de seguimiento en tiempo real proporciona tranquilidad tanto para mí como para mis seres queridos.</p>
+                    </div>
+                    <div className="p-6">
+                        <img  src={yo}  className="h-28 border border-gray-300 rounded-lg"/>
+                        <h2 className="mx-auto py-4 text-2xl font-medium leading-none tracking-tighter text-neutral-600 lg:text-3xl">Alejandra Rodriguez</h2>
+                        <p className="mx-auto text-2xl leading-relaxed text-gray-500">¡El aplicativo RPM ha cambiado por completo la forma en que organizo mis viajes en moto! Ahora puedo planificar rutas incre&iacute;bles, descubrir nuevos destinos y conectarme con otros motociclistas apasionados. Es una herramienta invaluable para cualquier amante de las motos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <Footer></Footer>
         <section class="bg-white dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
@@ -171,6 +206,7 @@ const Home = () => {
             </a>
         </section>
         {/* ------------------- */}
+        
       </>
     )
 }
