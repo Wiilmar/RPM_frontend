@@ -1,5 +1,5 @@
 import logosSena from "../image/sena.png"
-import logoIG from "../image/logoig.png"
+import logoIG from "../image/logoIG.png"
 import logoX from "../image/logoxd.png"
 import logoFB from "../image/logofb.png"
 
