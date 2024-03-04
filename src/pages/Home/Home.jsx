@@ -15,7 +15,14 @@ import picQvision from "../../image/Home/pic_Qvision.png"
 import picQvalores from "../../image/Home/pic_Qvalores.png"
 import picTyecid from "../../image/Home/pic_Tyecid.png"
 import picTaldair from "../../image/Home/pic_Taldair.png"
+import picTalvaro from "../../image/Home/pic_Talvaro.png"
+import picTcamilo from "../../image/Home/pic_Tcamilo.png"
+import picTcristian from "../../image/Home/pic_Tcristian.png"
+import picTluis from "../../image/Home/pic_Tluis.png"
+import picTDaniel from "../../image/rage.jpg"
+import picTwilman from "../../image/Home/pic_Twilman.png"
 import picIG from "../../image/logoIG.png"
+import picDC from "../../image/Home/pic_DC.png"
 
 
 //------ Importacion de mas Imagenes
@@ -129,10 +136,6 @@ const Home = () => {
                 {/* ------------------- */}
             </div>
         </section>
-        
-
-
-        {/*el pepeeeeee*/}
 
         <section>
             <div className="relative items-center w-full px-5 py-10 mx-auto md:px-12 lg:px-24 max-w-7xl">
@@ -160,21 +163,18 @@ const Home = () => {
             </div>
         </section>
 
-
-        <Footer></Footer>
-
         <section class="bg-white dark:bg-gray-900">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+            <div class="py-20 px-4 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-6">
                 <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nuestro equipo</h2>
-                    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400"> "Descubre quiénes son las personas detrás de este inspirador proyecto." </p>
+                    <p class="font-light text-gray-500 text-2xl dark:text-gray-400"> &#34;Descubre quiénes son las personas detrás de este inspirador proyecto.&#34; </p>
                 </div> 
                 <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {/* Avatar Yecid */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
                         <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Yecid Pardo </h3>
-                        <p> Scrum Master </p>
+                        <p className="text-lg"> Scrum Master </p>
                         <ul class="flex justify-center mt-4 space-x-4">
                             <li>
                                 <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
@@ -198,15 +198,10 @@ const Home = () => {
                     {/* ------------------ */}
                     {/* Avatar Cristian  */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
-                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTcristian } alt="Foto de perfil Cristian"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Cristian Narvaez </h3>
-                        <p> Cargo </p>
+                        <p className="text-lg"> Programador Backend </p>
                         <ul class="flex justify-center mt-4 space-x-4">
-                            <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 23 23" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                </a>
-                            </li>
                             <li>
                                 <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white hover:opacity-70 hover:bg-white">
                                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" aria-hidden="true">
@@ -224,13 +219,15 @@ const Home = () => {
                     {/* ------------------ */}
                     {/* Avatar Wilman  */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
-                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTwilman } alt="Foto de perfil Wilman"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Wilman Rodriguez </h3>
-                        <p> Cargo </p>
+                        <p className="text-lg"> Programador Frontend </p>
                         <ul class="flex justify-center mt-4 space-x-4">
                             <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 23 23" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white hover:opacity-70 hover:bg-white">
+                                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                        <image href={ picDC } x="2" y="2" height="22" width="22"/>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
@@ -250,12 +247,12 @@ const Home = () => {
                     {/* ------------------ */}
                     {/* Avatar Daniel  */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
-                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTDaniel } alt="Foto de perfil Daniel"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Daniel Lubo </h3>
-                        <p> cargo </p>
+                        <p className="text-lg"> Programador Frontend </p>
                         <ul class="flex justify-center mt-4 space-x-4">
                             <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
+                                <a href="https://www.youtube.com/watch?v=GBIIQ0kP15E" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
                                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 23 23" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                                 </a>
                             </li>
@@ -263,6 +260,13 @@ const Home = () => {
                                 <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white hover:opacity-70 hover:bg-white">
                                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" aria-hidden="true">
                                         <image href={ picIG } x="2" y="2" height="22" width="22"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white hover:opacity-70 hover:bg-white">
+                                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                        <image href={ picDC } x="2" y="2" height="22" width="22"/>
                                     </svg>
                                 </a>
                             </li>
@@ -276,9 +280,9 @@ const Home = () => {
                     {/* ------------------ */}
                     {/* Avatar Camilo  */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
-                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTcamilo } alt="Foto de perfil Camilo"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Camilo Tacue </h3>
-                        <p> Cargo </p>
+                        <p className="text-lg"> Programador M&#243;vil </p>
                         <ul class="flex justify-center mt-4 space-x-4">
                             <li>
                                 <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
@@ -302,15 +306,10 @@ const Home = () => {
                     {/* ------------------ */}
                     {/* Avatar Luis  */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
-                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTluis } alt="Foto de perfil Luis"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Luis Martinez </h3>
-                        <p> Cargo </p>
+                        <p className="text-lg"> Programador M&#243;vil </p>
                         <ul class="flex justify-center mt-4 space-x-4">
-                            <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 23 23" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                </a>
-                            </li>
                             <li>
                                 <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white hover:opacity-70 hover:bg-white">
                                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" aria-hidden="true">
@@ -328,9 +327,9 @@ const Home = () => {
                     {/* ------------------ */}
                     {/* Avatar Aldair  */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
-                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTaldair } alt="Foto de perfil Aldair"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Aldair Torres </h3>
-                        <p> Cargo </p>
+                        <p className="text-lg"> Programador Backend </p>
                         <ul class="flex justify-center mt-4 space-x-4">
                             <li>
                                 <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
@@ -354,15 +353,10 @@ const Home = () => {
                     {/* ------------------ */}
                     {/* Avatar Alvaro  */}
                     <div class="text-center text-gray-500 dark:text-gray-400">
-                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={ picTalvaro } alt="Foto de perfil alvaro"/>
                         <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Alvaro Lopez </h3>
-                        <p> Cargo </p>
+                        <p className="text-lg"> Programador Backend </p>
                         <ul class="flex justify-center mt-4 space-x-4">
-                            <li>
-                                <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-blue-200">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 23 23" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                </a>
-                            </li>
                             <li>
                                 <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white hover:opacity-70 hover:bg-white">
                                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" aria-hidden="true">
@@ -381,6 +375,10 @@ const Home = () => {
                 </div> 
             </div>
         </section>
+
+
+        <Footer></Footer>
+
         {/* Boton para que el usuario sea enviado al principio de la pagina */}
         <section>
             <a href="#">
