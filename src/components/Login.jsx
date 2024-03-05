@@ -1,43 +1,37 @@
+import { Link } from 'react-router-dom';
+
+
 const LoginAdmin = () => {
     return(
-        <div className="flex flex-col justify-center flex-1 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
-            <div className="w-full max-w-xl mx-auto lg:w-96">                        
-                <div>                
-                    <h2 className="mt-6 text-3xl font-extrabold text-neutral-600">Iniciar Sesion</h2>
-                </div>
-
-                <div className="mt-8">
-                    <div className="mt-6">
-                        <form action="#" method="POST" className="space-y-6">
-                            <div>
-                                <label  className="block text-sm font-medium text-neutral-600">Correo Electronico</label>
-                                    <div className="mt-1">
-                                        <input id="email" name="email" type="email" required="" placeholder="Ingresa tu correo electronico" className="block w-full px-5 py-3 text-base placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300"/>
-                                    </div>
-                            </div>
-
-                            <div className="space-y-1">
-                                <label  className="block text-sm font-medium text-neutral-600">Contraseña</label>
-                                    <div className="mt-1">
-                                        <input id="password" name="password" type="password" required="" placeholder="Ingresa tu contraseña" className="block w-full px-5 py-3 text-base placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300"/>
-                                    </div>
-                            </div>
-
-                            <div className="flex items-center justify-between">                                
-                                <div className="text-sm">
-                                    <a href="#" className="font-medium text-blue-600 hover:text-blue-500">Olvidaste tu contraseña? </a>
-                                </div>
-                            </div>
-
-                            <div>
-                                <button type="submit" className="flex items-center justify-center w-full px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</button>
-                            </div>
-
-                        </form>                                                    
-                    </div>
-                </div>
+      <>
+      <div className="min-h-screen flex items-center justify-center" style={{ background: 'linear-gradient(to right, #000814, #E0F4FF)' }}>
+        <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col" style={{ backgroundColor: '#FFFFFF', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)' }}>
+          <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">Inicio sesión - Administrador</h2>
+            <div className="mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">Nombre de usuario</label>
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Nombre de usuario"/>
             </div>
-        </div>       
+            
+            <div className="mb-6">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password"> Contraseña </label>
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="Contraseña"/>
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <div className="flex">
+                <Link to="/" className="mr-12">
+                <button className="bg-blueDark hover:bg-blueLight hover:text-white text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Cerrar</button>
+                </Link>
+                
+                <Link to="/dashboard">
+                <button className="bg-blueDark hover:bg-blueLight hover:text-white text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:cursor-pointer" type="button">Iniciar sesión</button>
+
+                </Link>
+              </div>
+            </div>
+        </div>
+    </div>
+    </>
     )
 }
 

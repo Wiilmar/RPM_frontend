@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import  LogoRPM from "../image/logoRPM.png"
 
 const Nav = () => {
@@ -22,12 +23,12 @@ const Nav = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a href="#servicios" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Servicios</a>
                 <a href="#quienesSomos" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">&#191;Qui&#233;nes Somos&#63;</a>
-                <a href="#" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Experiencias</a>
-                <a href="#" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Nuestro Equipo</a>
+                <a href="#experiencias" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Experiencias</a>
+                <a href="#equipo" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Nuestro Equipo</a>
               </div>
             </div>
             <button className="hidden md:block">
-              <a href="#" className=" font-semibold inline-block bg-blueDark hover:bg-blueLight hover:text-white text-white px-4 py-2 rounded-md transition duration-300 ease-in-out">Iniciar Sesión</a>
+              <Link to="/login" className="font-semibold inline-block bg-blueDark hover:bg-blueLight hover:text-white text-white px-4 py-2 rounded-md transition duration-300 ease-in-out">Administrador</Link>
             </button>
             <div className="md:hidden">
               <button onClick={toggleMenu} className="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-blueLight focus:outline-none focus:bg-blueDark focus:text-white">
@@ -43,11 +44,11 @@ const Nav = () => {
             <div className="bg-whiteThin px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a href="#servicios" className="block px-3 py-2 rounded-md text-lg text-black font-semibold hover:bg-amarillo">Servicios</a>
               <a href="#quienesSomos" className="block px-3 py-2 rounded-md text-lg text-black font-semibold hover:bg-amarillo">Quiénes Somos</a>
-              <a href="#" className="block px-3 py-2 rounded-md text-lg text-black font-semibold hover:bg-amarillo">Experiencias</a>
-              <a href="#" className="block px-3 py-2 rounded-md text-lg font-semibold text-blackfont-semibold hover:bg-amarillo">Nuestro Equipo</a>
+              <a href="#experiencias" className="block px-3 py-2 rounded-md text-lg text-black font-semibold hover:bg-amarillo">Experiencias</a>
+              <a href="#equipo" className="block px-3 py-2 rounded-md text-lg font-semibold text-blackfont-semibold hover:bg-amarillo">Nuestro Equipo</a>
             </div>            
             <div className=" bg-whiteThin px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="#" className="block px-3 py-2 rounded-md text-lg font-medium text-white bg-blueDark hover:bg-blueLight">Iniciar Sesión</a>
+              <Link to="/login" className="block px-3 py-2 rounded-md text-lg font-medium text-white bg-blueDark hover:bg-blueLight">Administrador</Link>
             </div>
           </div>
         )}

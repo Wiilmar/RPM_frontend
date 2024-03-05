@@ -13,7 +13,13 @@ export default {
         blueLight: "#003566",
         whiteThin: "#E3E3E3",
         whiteLight: "#D9D9D9",
-        amarilloTitle: "#DBAC00"
+        amarilloTitle: "#DBAC00",
+        azulclaro: "#E0F4FF"
+
+
+      },
+      backgroundImage:{
+
       }
     },
   },

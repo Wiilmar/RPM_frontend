@@ -3,7 +3,7 @@ import Home from './pages/Home/Home'
 import Dashboard from './pages/Dashboard/Dashboard'
 import Rutas from './pages/Rutas/Rutas'
 import Users from './pages/Users/Users'
-import Nuevo from './components/Login'
+import Login from './components/Login'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/rutas" element={<Rutas />} />
         <Route path="/users" element={<Users />} />
-        <Route path="/admin" element={<Nuevo />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   )
