@@ -3,13 +3,11 @@
 
 //----- Importacion de componentes
 import Nav from "../../components/Nav"
+import Information from "../../components/Information"
+import AboutUs from "../../components/OurServices"
 import Footer from "../../components/Footer"
 
 //----- Importacion de imagenes
-import picMV from "../../image/Home/pic_MVYecid.png"
-import picSRutas from "../../image/Home/pic_rutas2.webp"
-import picSPresupuesto from "../../image/Home/pic_presupuesto2.webp"
-import picSMotoviajeros from "../../image/Home/pic_motoviajeros2.jpg"
 import picQmision from "../../image/Home/pic_Qmision.png"
 import picQvision from "../../image/Home/pic_Qvision.png"
 import picQvalores from "../../image/Home/pic_Qvalores.png"
@@ -30,70 +28,14 @@ import picDC from "../../image/Home/pic_DC.png"
 import sujetoUno from "../../image/sujetoUno.jpg"
 import sujetoDos from "../../image/sujetoDos.jpg"
 import sujetaTres from "../../image/sujetaTres.jpg"
+import OurServices from "../../components/OurServices"
 
 const Home = () => {
     return (
       <>
-        <Nav></Nav>
-        <section className="text-gray-400 bg-amarillo body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-5xl text-5xl mb-4 font-medium text-black">Rutas Para Moteros </h1>
-              <p className="mb-8 leading-relaxed text-black sm:text-2xl text-2xl"> &#34;Descubre nuevas emociones en dos ruedas con R.P.M. <br className="hidden lg:inline-block" /> &#161;La gu&#237;a definitiva para explorar el mundo en moto&#33;&#34; </p>
-              <div className="flex justify-center">
-                <button className="inline-flex text-white bg-blueDark border-0 py-2 px-6 focus:outline-none hover:bg-blueLight hover:text-white rounded text-lg"> Descargar </button>
-                <button className="ml-4 inline-flex text-white border-2 border-white py-2 px-6 focus:outline-none hover:bg-white-100 hover:text-black hover:border-black rounded text-lg"> Cont&#225;ctanos </button>
-              </div>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-              <img className="object-cover object-center rounded" alt="hero" src={ picMV } />
-            </div>
-          </div>
-        </section>
-
-        <section className="text-gray-400 bg-white body-font">
-            <div id="servicios" className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col text-center w-full mb-20">
-                    <h1 className="text-5xl font-bold title-font mb-4 text-black"> Nuestros Servicios </h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-2xl text-black text-opacity-50">Explora nuestra amplia gama de servicios diseñados especialmente para hacer de tu viaje una experiencia inolvidable.</p>
-                </div>
-                <div className="flex flex-wrap -m-4">
-                    {/* Primera Card: Rutas */}
-                    <div className="p-4 md:w-1/3 ">
-                        <div className="h-full border-2 rounded-lg overflow-hidden border-black bg-blueLight">
-                            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={ picSRutas } alt="blog"/>
-                            <div className="p-6 ">
-                                <h1 className="title-font text-3xl text-white mb-3 font-bold"> Rutas </h1>
-                                <p className="leading-relaxed mb-3 text-2xl text-whiteLight">Nuestra app te permite explorar paisajes impresionantes, disfrutar de la libertad sobre dos ruedas y crear recuerdos inolvidables en cada ruta.</p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* ------------------- */}
-                    {/* Segunda Card: Presupuesto */}
-                    <div className="p-4 md:w-1/3 ">
-                        <div className="h-full border-2 rounded-lg overflow-hidden border-black bg-blueLight">
-                            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={ picSPresupuesto } alt="blog"/>
-                            <div className="p-6">
-                                <h1 className="title-font text-3xl text-white mb-3 font-bold"> Presupuesto </h1>
-                                <p className="leading-relaxed mb-3 text-2xl text-whiteLight">Nuestro aplicativo te ofrece un posible presupuesto en base a la ruta que traces desde un punto a otro en nuestro mapa. </p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* ------------------- */}
-                    {/* Tercera Card: Motoviajeros */}
-                    <div className="p-4 md:w-1/3 ">
-                        <div className="h-full border-2 rounded-lg overflow-hidden border-black bg-blueLight">
-                            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={ picSMotoviajeros } alt="blog"/>
-                            <div className="p-6">
-                                <h1 className="title-font text-3xl text-white mb-3 font-bold"> Motoviajeros </h1>
-                                <p className="leading-relaxed mb-3 text-2xl text-whiteLight">Nuestra app te ofrece una plataforma para conectar con otros motoviajeros, compartir experiencias, consejos y planificar viajes juntos.</p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* ------------------- */}
-                </div>
-            </div>
-        </section>
+        <Nav />
+        <Information />
+        <OurServices />
         
         <section className="text-gray-400 bg-blueDark body-font">
             <div id="quienesSomos" className="container px-5 py-24 mx-auto">
