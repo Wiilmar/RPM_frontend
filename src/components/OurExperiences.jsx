@@ -7,7 +7,7 @@ const OurExperiences = () => {
     return(
         <>
         <section>
-            <div id="experiencias" className="relative items-center w-full px-5 py-10 mx-auto md:px-12 lg:px-24 max-w-7xl">
+            <div id="experiencias" className="relative items-center w-full px-5 py-7 mx-auto md:px-12 lg:px-24 max-w-7xl pb-20">
                 <div className="flex flex-col text-center w-full ">
                     <h1 className="text-5xl font-bold title-font py-20 text-black">¡Nuestras Experiencias!</h1>
                 </div>
