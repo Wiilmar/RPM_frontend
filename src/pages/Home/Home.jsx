@@ -47,5 +47,8 @@ export default Home
 *TAREAS PENDIENTES 
 
 toDo: Cambiar imagenes del modulo "Quienes Somos?"
-toDO: Corregir problemas de encaje con el footer - DANIEL 
+toDo: Corregir problemas de encaje con el footer - DANIEL 
+toDo: Cambiar el posicionamiento de texto en justify-center
+toDo: Cambiar el tamano de el nav
+toDo: Solucionar el problema de responsividad en la card presupeusto
 */

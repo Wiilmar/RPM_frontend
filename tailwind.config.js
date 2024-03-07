@@ -9,11 +9,11 @@ export default {
       colors:{
         black: "#000000",
         blueDark: "#000814",
-        amarillo: "#FFC300",
         blueLight: "#003566",
+        amarillo: "#FFC300",
+        amarilloTitle: "#DBAC00",
         whiteThin: "#E3E3E3",
         whiteLight: "#D9D9D9",
-        amarilloTitle: "#DBAC00",
         azulclaro: "#E0F4FF"
 
 
