@@ -11,7 +11,7 @@ import OurServices from "../../components/OurServices"
 import AboutUs from "../../components/AboutUs"
 import OurExperiences from "../../components/OurExperiences"
 import Team from "../../components/Team"
-//import ContactUs from "../../components/ContactUs"
+import ContactUs from "../../components/ContactUs"
 import Footer from "../../components/Footer"
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
         <AboutUs />
         <OurExperiences />
         <Team />
-        {/* <ContactUs /> */}
+        <ContactUs />
         <Footer></Footer>
         
         {/* Boton para que el usuario sea enviado al principio de la pagina */}

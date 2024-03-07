@@ -1,127 +1,72 @@
-//----- Importacion de imagenes
+import picPQRS from "../image/Home/pic_pqrs.png"
 
 const ContactUs = () => {
-    return(
-        <>
-        <section className="text-gray-600 body-font relative">
-            <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap" >
-                <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-                <iframe 
-                title="map" 
-                width="100%" 
-                height="100%" 
-                className="absolute inset-0" 
-                frameBorder="1" 
-                marginHeight="0" 
-                marginWidth="0" 
-                scrolling="no" 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2173.4235172283993!2d-76.56225200890212!3d2.481663975887554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30059e6a5931bb%3A0x3a8b57a83729be94!2sCENTRO%20DE%20TELEINFORM%C3%81TICA%20Y%20PRODUCCI%C3%93N%20INDUSTRIAL!5e0!3m2!1ses-419!2sco!4v1709783715238!5m2!1ses-419!2sco">     
-                </iframe>
-                <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                    <div className="lg:w-1/2 px-6">
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                    <p className="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
-                    </div>
-                    <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                    <a href="mailto:example@email.com" className="text-yellow-500 leading-relaxed">example@email.com</a>
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                    <p className="leading-relaxed">123-456-7890</p>
-                    </div>
+  return (
+    <>
+    <section>
+        <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8" style={{ backgroundImage: `url(${picPQRS})` }}>
+          <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+            <div className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
+          </div>
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">El contacto</h2>
+            <p className="mt-2 text-lg leading-8 text-gray-600">Que tienes pa decir?</p>
+          </div>
+          <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">Nombres</label>
+                <div className="mt-2.5">
+                  <input type="text" name="first-name" id="first-name" autoComplete="given-name" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
+              </div>
+              <div>
+                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">Apellido</label>
+                <div className="mt-2.5">
+                  <input type="text" name="last-name" id="last-name" autoComplete="family-name" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
-                <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-                <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-                <p className="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
-                <div className="relative mb-4">
-                    <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-                    <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">Otro campo compañía</label>
+                <div className="mt-2.5">
+                  <input type="text" name="company" id="company" autoComplete="organization" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
-                <div className="relative mb-4">
-                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">Correo electrónico</label>
+                <div className="mt-2.5">
+                  <input type="email" name="email" id="email" autoComplete="email" className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
-                <div className="relative mb-4">
-                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-                </div>
-                <div className="relative mb-4">
-                    <label htmlFor="issue" className="leading-7 text-sm text-gray-600">Seleccionar opción</label>
-                    <select id="issue" name="issue" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    <option value="Peticion">Peticion</option>
-                    <option value="Queja">Queja</option>
-                    <option value="Reclamo">Reclamo</option>
-                    <option value="Sugerencias">Sugerencia</option>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">Número de teléfono</label>
+                <div className="relative mt-2.5">
+                  <div className="absolute inset-y-0 left-0 flex items-center">
+                    <label htmlFor="country" className="sr-only">País</label>
+                    <select id="country" name="country" className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                      <option>CO</option>
+                      <option>AR</option>
+                      <option>EU</option>
                     </select>
+                  </div>
+                  <input type="tel" name="phone-number" id="phone-number" autoComplete="tel" className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
-                <div className="relative mb-4">
-                    <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-                    <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">Mensaje</label>
+                <div className="mt-2.5">
+                  <textarea name="message" id="message" rows={4} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                 </div>
-                <button className="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
-                <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-                </div>
+              </div>
             </div>
-        </section>
-
-
-        <section className="text-gray-600 body-font relative">
-            <div className="absolute inset-0 bg-gray-300">
-                <iframe
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                marginHeight="0"
-                marginWidth="0"
-                title="map"
-                scrolling="no"
-                src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-                style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}
-                ></iframe>
+            <div className="mt-10">
+              <button type="submit" className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Hablamos o K?</button>
             </div>
-            <div className="container px-5 py-24 mx-auto flex">
-                <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-                <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-                <p className="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
-                <div className="relative mb-4">
-                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-                </div>
-                <div className="relative mb-4">
-                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-                </div>
-                <div className="relative mb-4">
-                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                    <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-                </div>
-                <div className="relative mb-4">
-                    <label htmlFor="issue" className="leading-7 text-sm text-gray-600">Seleccionar opción</label>
-                    <select id="issue" name="issue" className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    <option value="Peticion">Peticion</option>
-                    <option value="Queja">Queja</option>
-                    <option value="Reclamo">Reclamo</option>
-                    <option value="Sugerencias">Sugerencia</option>
-                    </select>
-                </div>
-                <div className="relative mb-4">
-                    <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-                    <textarea
-                    id="message"
-                    name="message"
-                    className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                    ></textarea>
-                </div>
-                <button className="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
-                <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-                </div>
-            </div>
-        </section>
-        </>
-    )
+          </form>
+        </div>
+      </section>
+    </>
+  )
 }
-         
-
-
 
 export default ContactUs
