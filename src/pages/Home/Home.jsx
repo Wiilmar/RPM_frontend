@@ -48,7 +48,7 @@ export default Home
 
 toDo: Cambiar imagenes del modulo "Quienes Somos?"
 toDo: Corregir problemas de encaje con el footer - DANIEL 
-toDo: Cambiar el posicionamiento de texto en justify-center
 toDo: Cambiar el tamano de el nav
 toDo: Solucionar el problema de responsividad en la card presupeusto
+toDO: Hacer que el boton de regresar a la pagina principal aparezca en la sgunda seccion de lo contrario deera de estar oculta
 */
