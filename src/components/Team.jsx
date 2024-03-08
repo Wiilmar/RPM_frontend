@@ -51,7 +51,6 @@ const Team = () => {
                                 </a>
                             </li> 
                         </ul>
-                        
                     </div>
                     {/* ------------------ */}
                     {/* Avatar Cristian  */}
