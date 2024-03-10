@@ -17,9 +17,13 @@ const Users=()=>{
     return(
         <>
             <h1>Usuarios</h1>
+            <br />
             {users.map((user)=>(
                 <div key={user._id}>
-                    <p>{user.Nombres_Mv}</p>
+                    <p className="bg-amarillo ">{user.Nombres_Mv}</p>
+                    <p className="bg-azulclaro">{user.Email_Mv}</p>
+                    <p className="bg-azulclaro">{user.NumeroIdent_Mv}</p>
+                    <p className="bg-azulclaro">{user.FechaNac_Mv}</p>
                 </div>
             ))}
         </>

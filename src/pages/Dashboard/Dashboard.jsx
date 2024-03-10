@@ -20,11 +20,10 @@ const Dashboard = () => {
 
   return (
     <>
-      <h1>Dashboard</h1>
-      <h2>Motos:</h2>
+      <h1>que</h1>
+      <h2>so</h2>
       {motos.map((moto) => (
-        <div key={moto._id}>
-          <img src={moto.FotoMoto} width={'100px'} alt="motoIMG" />
+        <div key={moto._id}>          
           <p>{moto.MotoNombre}</p>
         </div>
       ))}
