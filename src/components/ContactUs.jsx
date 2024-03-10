@@ -1,4 +1,4 @@
-import picPQRS from "../image/Home/pic_pqrs.png"
+//import picPQRS from "../image/Home/pic_pqrs.png"
 
 const ContactUs = () => {
   return (
