@@ -44,11 +44,11 @@ const Home = () => {
         <OurServices />
         <AboutUs />
         <OurExperiences />
-        <Team />
+        <Statistics />        
         <Gallery />
         <Faq />
+        <Team />
         <ContactUs />
-        <Statistics />
         <Footer></Footer>
         
         {/* Boton para que el usuario sea enviado al principio de la pagina */}
