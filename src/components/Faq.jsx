@@ -10,10 +10,14 @@ const Faq = () => {
     const questions = [
         {
             question: "Pregunta 1",
-            answer: "Respuesta"
+            answer: "RESPUESTA BOBO IJUEPUTA OME"
         },
         {
             question: "Pregunta 2",
+            answer: "Respuesta"
+        },
+        {
+            question: "YO",
             answer: "Respuesta"
         },
     ];
@@ -22,7 +26,7 @@ const Faq = () => {
         <>
             <div className="mx-auto px-5 bg-amarillo w-full">
                 <div className="flex flex-col items-center">
-                    <h2 className="font-bold text-5xl mt-5 tracking-tight">Preguntas frecuentes</h2>
+                    <h2 className="font-bold text-4xl mt-5 tracking-tight">Preguntas frecuentes</h2>
                     <p className="text-neutral-500 text-xl mt-3">Conozca las preguntas mas frecuentes de nuestra comunidad</p>
                 </div>
                 <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">

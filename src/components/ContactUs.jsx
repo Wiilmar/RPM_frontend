@@ -3,7 +3,7 @@ import picPQRS from "../image/Home/pic_pqrs.png"
 const ContactUs = () => {
   return (
     <>
-      <section>
+      <section id="Contactanos">
         <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12 relative bg-center bg-cover"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${ picPQRS })`

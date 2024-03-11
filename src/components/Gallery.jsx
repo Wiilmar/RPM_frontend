@@ -9,9 +9,9 @@ const Gallery = () => {
         <>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-20 mx-auto">
-                    <div className="flex flex-col text-center w-auto mb-9 bg-blueDark rounded-2xl">
-                        <h1 className="sm:text-5xl text-5xl font-bold title-font mb-4 text-white pb-1 pt-10"> Únete a R.P.M. </h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-2xl text-justify pb-8 px-12 text-whiteDark">Descubre la aplicación de moto viajeros y explora el mundo en tu moto de manera emocionante. Planifica tus viajes eficientemente, encuentra rutas personalizadas y alojamiento acogedor. Conéctate con otros moto viajeros para compartir experiencias únicas y descubrir nuevos destinos fascinantes. ¡Descarga la aplicación ahora y vive la experiencia al máximo!</p>
+                    <div id='download' className="flex flex-col text-center w-auto mb-9 bg-blueDark rounded-2xl">
+                        <h1 className="sm:text-4xl text-4xl font-bold title-font mb-4 text-white pb-1 pt-10"> Únete a R.P.M. </h1>
+                        <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-justify pb-8 px-12 text-whiteDark">Descubre la aplicación de moto viajeros y explora el mundo en tu moto de manera emocionante. Planifica tus viajes eficientemente, encuentra rutas personalizadas y alojamiento acogedor. Conéctate con otros moto viajeros para compartir experiencias únicas y descubrir nuevos destinos fascinantes. ¡Descarga la aplicación ahora y vive la experiencia al máximo!</p>
                         <div className="flex justify-center mx-auto items-center flex-shrink-0 space-x-5 mb-9 bg-blueDark pb-5 px-6">
                             <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
                                 <img src={logoPS} alt="Google Play" className="w-6 h-6" />
