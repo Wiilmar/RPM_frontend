@@ -36,7 +36,6 @@ const Gasolina = () => {
   };
   
   export default Gasolina;
-
 */
 
 import { useEffect, useState } from "react";
