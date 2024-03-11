@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getMotos } from "../../api/motos";
 
 const Dashboard = () => {
+  alert("Dashboard");
   const [motos, setMotos] = useState([]);
 
   useEffect(() => {

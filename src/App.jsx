@@ -12,18 +12,16 @@ import { ProtectedRoute } from './protectedRoute'
 function App() {
   return (
     <AuthProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" index element={<Home />} />
-        <ProtectedRoute element={<ProtectedRoute />}>
-        <Route path="/dashboard" element={<Dashboard />} />
-        </ProtectedRoute>
-        <Route path="/rutas" element={<Rutas />} />
-        <Route path="/users" element={<Users />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/gasolina" element={<Gasolina />} />        
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/rutas" element={<Rutas />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/gasolina" element={<Gasolina />} />        
+        </Routes>
+      </BrowserRouter>
     </AuthProvider>
   )
 }

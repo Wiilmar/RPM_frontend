@@ -16,7 +16,7 @@ export const useAuth=()=>{
 // eslint-disable-next-line react/prop-types
 export const AuthProvider=({children})=>{
     const [user, setUser]=useState(null)
-    const [isAuth, setIsAuth] = useState(false)
+    const [isAuth, setIsAuth] = useState(true)
     const [loading, setLoading]=useState(true)
     
 
@@ -27,6 +27,7 @@ export const AuthProvider=({children})=>{
             setUser(res.data) 
             
             sessionStorage.setItem('token', res.data.token);
+            console.log(res.data.token)
 
             setIsAuth(true)
         } catch (error) {
@@ -39,6 +40,7 @@ export const AuthProvider=({children})=>{
     useEffect(()=>{
         async function checkLogin(){
             const token = sessionStorage.getItem('token');
+            console.log('tokencito recibido:', token)
 
          
             if (!token) {
