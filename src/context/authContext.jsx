@@ -1,5 +1,5 @@
 import { createContext, useState, useContext, useEffect } from "react";
-import  {Login}  from '../api/auth'
+import  {Login, Verify}  from '../api/auth'
 
 
 export const AuthContext=createContext()
@@ -27,7 +27,7 @@ export const AuthProvider=({children})=>{
             setUser(res.data) 
             
             sessionStorage.setItem('token', res.data.token);
-            console.log(res.data.token)
+            
 
             setIsAuth(true)
         } catch (error) {
@@ -40,7 +40,7 @@ export const AuthProvider=({children})=>{
     useEffect(()=>{
         async function checkLogin(){
             const token = sessionStorage.getItem('token');
-            console.log('tokencito recibido:', token)
+            
 
          
             if (!token) {
@@ -49,8 +49,9 @@ export const AuthProvider=({children})=>{
                 return setUser(null);
             }
                 try {
-                    const res = await verifyToken(token);
+                    const res = await Verify(token);
                     if (!res.data){  
+
                         setIsAuth(true)
                         setLoading(false)
                         return;

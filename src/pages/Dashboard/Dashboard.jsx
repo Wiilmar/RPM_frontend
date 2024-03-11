@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { getMotos } from "../../api/motos";
 
 const Dashboard = () => {
-  alert("Dashboard");
+  
   const [motos, setMotos] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Dashboard = () => {
     try {
       const response = await getMotos();
       setMotos(response.data.moto);
-      console.log(response.data.moto);
+      
     } catch (error) {
       console.error(error)
     }

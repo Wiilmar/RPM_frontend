@@ -15,11 +15,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+
+          <Route element={<ProtectedRoute />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
           <Route path="/rutas" element={<Rutas />} />
           <Route path="/users" element={<Users />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/gasolina" element={<Gasolina />} />        
+          <Route path="/gasolina" element={<Gasolina />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
