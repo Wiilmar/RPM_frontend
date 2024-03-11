@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../context/authContext.jsx";
 import { useNavigate } from "react-router-dom";
 import React, {useEffect} from "react";
 const LoginAdmin = () => {
@@ -17,6 +17,7 @@ const LoginAdmin = () => {
   const onSubmit = handleSubmit(async (values) => {
     singin(values)
   })
+
   return (
     <>
     <form onSubmit={onSubmit}>
@@ -39,10 +40,10 @@ const LoginAdmin = () => {
                 <button className="bg-blueDark hover:bg-blueLight hover:text-white text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Cerrar</button>
               </Link>
 
-              <Link to="/dashboard">
+              {/* <Link to="/dashboard"> */}
                 <button className="bg-blueDark hover:bg-blueLight hover:text-white text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:cursor-pointer" type="submit">Iniciar sesión</button>
 
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
         </div>

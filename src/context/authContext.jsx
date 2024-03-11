@@ -1,5 +1,5 @@
 import { createContext, useState, useContext, useEffect } from "react";
-import  {Login}  from '../api/auth.js';
+import  {Login}  from '../api/auth'
 
 
 export const AuthContext=createContext()
@@ -30,7 +30,7 @@ export const AuthProvider=({children})=>{
 
             setIsAuth(true)
         } catch (error) {
-            return <h1>pene</h1>
+            return alert('Credenciales Incorrectas mano')
             
         }
 

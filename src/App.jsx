@@ -5,7 +5,8 @@ import Rutas from './pages/Rutas/Rutas'
 import Users from './pages/Users/Users'
 import Login from './components/Login'
 import Gasolina from './pages/Gasoline/Gasoline'
-import { AuthProvider } from '../context/authContext'
+import { AuthProvider } from './context/authContext'
+import { ProtectedRoute } from './protectedRoute'
 
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" index element={<Home />} />
+        <ProtectedRoute element={<ProtectedRoute />}>
         <Route path="/dashboard" element={<Dashboard />} />
+        </ProtectedRoute>
         <Route path="/rutas" element={<Rutas />} />
         <Route path="/users" element={<Users />} />
         <Route path="/login" element={<Login />} />
