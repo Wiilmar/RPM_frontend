@@ -5,6 +5,7 @@ import Rutas from './pages/Rutas/Rutas'
 import Users from './pages/Users/Users'
 import Login from './components/Login'
 import Gasolina from './pages/Gasoline/Gasoline'
+import Preguntas from './pages/Pqrs/Pqrs'
 import { AuthProvider } from './context/authContext'
 import { ProtectedRoute } from './protectedRoute'
 
@@ -15,7 +16,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route element={<ProtectedRoute />}>
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
@@ -23,6 +23,7 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/login" element={<Login />} />
           <Route path="/gasolina" element={<Gasolina />} />
+          <Route path="/pqrs" element={<Preguntas />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
