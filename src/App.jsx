@@ -5,10 +5,12 @@ import Rutas from './pages/Rutas/Rutas'
 import Users from './pages/Users/Users'
 import Login from './components/Login'
 import Gasolina from './pages/Gasoline/Gasoline'
+import { AuthProvider } from '../context/authContext'
 
 
 function App() {
   return (
+    <AuthProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" index element={<Home />} />
@@ -19,6 +21,7 @@ function App() {
         <Route path="/gasolina" element={<Gasolina />} />        
       </Routes>
     </BrowserRouter>
+    </AuthProvider>
   )
 }
 
