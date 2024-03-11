@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getMotos } from "../../api/motos";
+import HeaderAdm from "../../components/HeaderAdm";
 
 const Dashboard = () => {
   
@@ -21,6 +22,7 @@ const Dashboard = () => {
 
   return (
     <>
+      <HeaderAdm />
       <h1>que</h1>
       <h2>so</h2>
       {motos.map((moto) => (
