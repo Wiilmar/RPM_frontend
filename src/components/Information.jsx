@@ -11,7 +11,9 @@ const Information = () => {
               <p className="mb-8 leading-relaxed text-black sm:text-2xl text-2xl"> &#34;Descubre nuevas emociones en dos ruedas con R.P.M. <br className="hidden lg:inline-block" /> &#161;La gu&#237;a definitiva para explorar el mundo en moto&#33;&#34; </p>
               <div className="flex justify-center">
                 <button className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-blueLight hover:text-white font-bold rounded text-lg"> Descargar </button>
+                <a href="#Contactanos">
                 <button className="ml-4 inline-flex text-white border-2 border-white py-2 px-6 focus:outline-none hover:bg-white-100 hover:text-black hover:border-black rounded text-lg"> Cont&#225;ctanos </button>
+                </a>
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">

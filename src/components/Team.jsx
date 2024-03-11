@@ -19,13 +19,13 @@ const Team = () => {
         <section className="bg-white dark:bg-blueDark">
             <div id="equipo" className="py-20 px-4 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-6">
                 <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nuestro equipo</h2>
+                    <h2 className="mb-4 text-5xl font-bold title-font text-gray-900 dark:text-white">Nuestro equipo</h2>
                     <p className="font-light text-gray-500 text-2xl dark:text-gray-400"> &#34;Descubre quiénes son las personas detrás de este inspirador proyecto.&#34; </p>
                 </div> 
                 <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {/* Avatar Yecid */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-44 h-44 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTyecid } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Yecid Pardo </h3>
                         <p className="text-xl group-hover:text-black"> Scrum Master </p>
                         <ul className="flex justify-center mt-4 space-x-4">
@@ -55,7 +55,7 @@ const Team = () => {
                     {/* ------------------ */}
                     {/* Avatar Cristian  */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-40 h-44 rounded-full" src={ picTcristian } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTcristian } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Cristian Narvaez </h3>
                         <p className="text-xl group-hover:text-black"> Programador Backend </p>
                         <ul className="flex justify-center mt-4 space-x-4">
@@ -78,7 +78,7 @@ const Team = () => {
                     {/* ------------------ */}
                     {/* Avatar Aldair  */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-44 h-44 rounded-full" src={ picTaldair } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTaldair } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Aldair Torres </h3>
                         <p className="text-xl group-hover:text-black"> Programador Backend </p>
                         <ul className="flex justify-center mt-4 space-x-4">
@@ -108,7 +108,7 @@ const Team = () => {
                     {/* ------------------ */}
                     {/* Avatar Alvaro  */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-44 h-44 rounded-full" src={ picTalvaro } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTalvaro } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Alvaro Lopez </h3>
                         <p className="text-xl group-hover:text-black"> Programador Backend </p>
                         <ul className="flex justify-center mt-4 space-x-4">
@@ -131,7 +131,7 @@ const Team = () => {
                     {/* ------------------ */}
                     {/* Avatar Wilman  */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-44 h-44 rounded-full" src={ picTwilman } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTwilman } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Wilman Rodriguez </h3>
                         <p className="text-xl group-hover:text-black"> Programador Frontend </p>
                         <ul className="flex justify-center mt-4 space-x-4">
@@ -161,7 +161,7 @@ const Team = () => {
                     {/* ------------------ */}
                     {/* Avatar Daniel  */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-44 h-44 rounded-full" src={ picTdaniel } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTdaniel } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Daniel Lubo </h3>
                         <p className="text-xl group-hover:text-black"> Programador Frontend </p>
                         <ul className="flex justify-center mt-4 space-x-4">
@@ -191,7 +191,7 @@ const Team = () => {
                     {/* ------------------ */}
                     {/* Avatar Camilo  */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-44 h-44 rounded-full" src={ picTcamilo } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTcamilo } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Camilo Tacue </h3>
                         <p className="text-xl group-hover:text-black"> Programador M&#243;vil </p>
                         <ul className="flex justify-center mt-4 space-x-4">
@@ -221,7 +221,7 @@ const Team = () => {
                     {/* ------------------ */}
                     {/* Avatar Luis  */}
                     <div className="text-center text-gray-500 dark:text-gray-400 group hover:bg-amarillo hover:rounded-lg transition-all duration-300 hover:py-5 hover:text-black">
-                        <img className="mx-auto mb-4 w-44 h-44 rounded-full" src={ picTluis } alt="Foto de perfil Yecid"/>
+                        <img className="mx-auto mb-4 w-45 h-44 rounded-full" src={ picTluis } alt="Foto de perfil Yecid"/>
                         <h3 className="mb-1 text-3xl font-bold tracking-tight text-white group-hover:text-black"> Luis Mart&iacute;nez </h3>
                         <p className="text-xl group-hover:text-black"> Programador M&#243;vil </p>
                         <ul className="flex justify-center mt-4 space-x-4">

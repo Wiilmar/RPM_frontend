@@ -41,7 +41,7 @@ const AboutUs = () => {
                     </div>
                     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                         <h2 className="text-white text-3xl title-font font-medium mb-2"> Valores </h2>
-                        <p className="leading-relaxed text-2xl text-justify">Valoramos y promovemos los siguientes <span className="text-yellow-500"> principios </span> fundamentales: <br/> solidaridad, responsabilidad, hermandad, respeto y integridad.  </p>
+                        <p className="leading-relaxed text-2xl text-justify">Valoramos y promovemos los siguientes <span className="text-yellow-500"> principios </span> fundamentales: solidaridad, responsabilidad, hermandad, respeto y integridad.  </p>
                     </div>
                 </div>
                 {/* ------------------- */}
