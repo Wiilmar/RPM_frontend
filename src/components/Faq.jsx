@@ -24,10 +24,10 @@ const Faq = () => {
 
     return (
         <>
-            <div className="mx-auto px-5 bg-amarillo w-full">
+            <div className="mx-auto px-5 py-20 bg-amarillo w-full">
                 <div className="flex flex-col items-center">
                     <h2 className="font-bold text-4xl mt-5 tracking-tight">Preguntas frecuentes</h2>
-                    <p className="text-neutral-500 text-xl mt-3">Conozca las preguntas mas frecuentes de nuestra comunidad</p>
+                    <p className="text-neutral-500 text-xl mt-3">&#34;Conozca las preguntas mas frecuentes de nuestra comunidad&#34;</p>
                 </div>
                 <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
                     {questions.map((item, index) => (

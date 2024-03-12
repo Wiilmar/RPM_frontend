@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/authContext.jsx";
 import { useNavigate } from "react-router-dom";
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 const LoginAdmin = () => {
   // eslint-disable-next-line no-unused-vars
   const { register, handleSubmit, formState: { errors } } = useForm()
@@ -12,7 +12,7 @@ const LoginAdmin = () => {
 
   useEffect(() => {
     if (isAuth) navigate('/dashboard')
-  }, [isAuth])
+  }, [isAuth, navigate])
 
   const onSubmit = handleSubmit(async (values) => {
     singin(values)
