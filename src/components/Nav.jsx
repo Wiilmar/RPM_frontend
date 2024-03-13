@@ -41,13 +41,13 @@ const Nav = () => {
         </div>
         {isMenuOpen && (
           <div className="md:hidden block">
-            <div className="bg-whiteThin px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="#servicios" className="block px-3 py-2 rounded-md text-lg text-black font-semibold hover:bg-amarillo">Servicios</a>
-              <a href="#quienesSomos" className="block px-3 py-2 rounded-md text-lg text-black font-semibold hover:bg-amarillo">Quiénes Somos</a>
-              <a href="#experiencias" className="block px-3 py-2 rounded-md text-lg text-black font-semibold hover:bg-amarillo">Experiencias</a>
-              <a href="#equipo" className="block px-3 py-2 rounded-md text-lg font-semibold text-blackfont-semibold hover:bg-amarillo">Nuestro Equipo</a>
+            <div className="bg-blue-500 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="#servicios" className="block px-3 py-2 rounded-md text-lg text-white font-semibold hover:bg-amarillo">Servicios</a>
+              <a href="#quienesSomos" className="block px-3 py-2 rounded-md text-lg text-white font-semibold hover:bg-amarillo">Quiénes Somos</a>
+              <a href="#experiencias" className="block px-3 py-2 rounded-md text-lg text-white font-semibold hover:bg-amarillo">Experiencias</a>
+              <a href="#equipo" className="block px-3 py-2 rounded-md text-lg text-white font-semibold hover:bg-amarillo">Nuestro Equipo</a>
             </div>            
-            <div className=" bg-whiteThin px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className=" bg-blue-500 px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link to="/login" className="block px-3 py-2 rounded-md text-lg font-medium text-white bg-blueDark hover:bg-blueLight">Administrador</Link>
             </div>
           </div>

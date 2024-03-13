@@ -133,8 +133,8 @@ const ContactUs = () => {
               </div>
               <textarea className="shadow mb-4 min-h-0 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Escribe aquí tu mensaje" name="message" style={{ maxHeight: '200px', minHeight: '50px', overflowY: 'auto' }} value={formValues.message} onChange={handleInputChange} required />
               <div className="flex justify-between">
-                <input className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" type="submit" value="Enviar" />
-                <input className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" type="reset" value="Restablecer" onClick={() => setFormValues({
+                <input className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-6 py-3 text-center me-2 mb-2" type="submit" value="Enviar Mensaje" />
+                <input className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-6 py-3 text-center me-2 mb-2" type="reset" value="Restablecer" onClick={() => setFormValues({
                   full_name: '',
                   email: '',
                   pqrs_type: '',

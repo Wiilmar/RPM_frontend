@@ -9,16 +9,20 @@ const Faq = () => {
 
     const questions = [
         {
-            question: "Pregunta 1",
-            answer: "RESPUESTA BOBO IJUEPUTA OME"
+            question: "Que es RPM?",
+            answer: "El nombre de RPM es el acronimo de Rutas Para Moteros"
         },
         {
-            question: "Pregunta 2",
-            answer: "Respuesta"
+            question: "Puedo registrar mi moto como yo quiera?",
+            answer: "Si claro!, en la aplicacion eres libre de poder registrar y guardar con los datos necesarios las motos que tu quieras para que las puedas usar, no es necesario que siempre uses una sola moto"
         },
         {
-            question: "YO",
-            answer: "Respuesta"
+            question: "Que hace diferente la aplicacion a usar google maps?",
+            answer: "Creemos fielmente que cada usuario es libre de elegir que herramienta usar para su viaje, no obstante en nuestra aplicacion encontraras elementos muy interesantes y de ayuda para que puedas realizar tu viaje con mayor comodidad, ta les como: un apartado de presupuesto generado en base a la eleccion de tu punto de inicio y punto de llegada y el consumo de tu motora. Un apartado de garaje el cual podras registrar y guardar tus motos para que seas libre de seleccionar la que quieras en cada viaje que realices. un apartado de tus rutas guardadas, el cual te permite guardar tus rutas y si asi lo deseas recomendarlas por la buena experiencia que tuviste"
+        },        
+        {
+            question: "Montate en mi motora",
+            answer: "pero vioasdji4enduya"
         },
     ];
 

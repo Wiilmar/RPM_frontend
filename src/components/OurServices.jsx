@@ -19,7 +19,7 @@ const OurServices = () => {
                             <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={ picSRutas } alt="blog"/>
                             <div className="p-6">
                                 <h1 className="title-font text-2xl text-white mb-3 font-bold"> Rutas </h1>
-                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-justify">Nuestra app te permite explorar paisajes impresionantes, disfrutar de la libertad sobre dos ruedas y crear recuerdos inolvidables en cada ruta.</p>
+                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-alain-left">Nuestra app te permite explorar paisajes impresionantes, disfrutar de la libertad sobre dos ruedas y crear recuerdos inolvidables en cada ruta.</p>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const OurServices = () => {
                             <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={ picSPresupuesto } alt="blog"/>
                             <div className="p-6">
                                 <h1 className="title-font text-2xl text-white mb-3 font-bold"> Presupuesto </h1>
-                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-justify">Nuestro aplicativo te ofrece un posible presupuesto en base a la ruta que traces desde un punto a otro en nuestro mapa. </p>
+                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-alain-left">Nuestro aplicativo te ofrece un posible presupuesto en base a la ruta que traces desde un punto a otro en nuestro mapa. </p>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const OurServices = () => {
                             <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={ picSMotoviajeros } alt="blog"/>
                             <div className="p-6">
                                 <h1 className="title-font text-2xl text-white mb-3 font-bold"> Motoviajeros </h1>
-                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-justify">Nuestra app te ofrece una plataforma para conectar con otros motoviajeros, compartir experiencias, consejos y planificar viajes juntos.</p>
+                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-alain-left">Nuestra app te ofrece una plataforma para conectar con otros motoviajeros, compartir experiencias, consejos y planificar viajes juntos.</p>
                             </div>
                         </div>
                     </div>
