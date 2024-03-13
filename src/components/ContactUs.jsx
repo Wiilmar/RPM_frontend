@@ -16,8 +16,9 @@ const ContactUs = () => {
 
   // Animaciones
   const successAnimation = useSpring({
-    opacity: showSuccessAlert ? 1 : 0,
+    opacity: showSuccessAlert ? 1 : 1, // valor de la opacidad al aparecer la alerta
     transform: showSuccessAlert ? 'translateY(0)' : 'translateY(-20px)',
+    config: { duration: 300 } // Duración de la animación
   });
 
   const errorAnimation = useSpring({
@@ -85,11 +86,11 @@ const ContactUs = () => {
         }}
       >
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-          <div className="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+          <div className="text-white relative px-4 py-10 bg-blueLight shadow-lg sm:rounded-3xl sm:p-20">
             <div className="text-center pb-6">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">¡Contáctanos!</h1>
-              <p className="text-lg text-gray-700">Háblanos, estamos aquí para ayudarte.</p>
+              <h1 className="text-4xl font-bold text-amarillo mb-4">¡Contáctanos!</h1>
+              <p className="text-xl text-white font-semibold"> ¿Que opinas de R.P.M.? </p>
             </div>
             {/* Alertas */}
             <animated.div style={successAnimation}>
@@ -130,10 +131,10 @@ const ContactUs = () => {
                   <option value="Sugerencia">Sugerencia</option>
                 </select>
               </div>
-              <textarea className="shadow mb-4 min-h-0 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Escribe aquí tu mensaje" name="message" style={{ maxHeight: '200px', overflowY: 'auto' }} value={formValues.message} onChange={handleInputChange} required />
+              <textarea className="shadow mb-4 min-h-0 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Escribe aquí tu mensaje" name="message" style={{ maxHeight: '200px', minHeight: '50px', overflowY: 'auto' }} value={formValues.message} onChange={handleInputChange} required />
               <div className="flex justify-between">
-                <input className="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Enviar ➤" />
-                <input className="shadow bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="reset" value="Restablecer" onClick={() => setFormValues({
+                <input className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" type="submit" value="Enviar" />
+                <input className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" type="reset" value="Restablecer" onClick={() => setFormValues({
                   full_name: '',
                   email: '',
                   pqrs_type: '',
