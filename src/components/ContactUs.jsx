@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 import picPQRS from "../image/Home/pic_pqrs.png";
 import { enviarPQRS } from '../api/pqrs';
 
@@ -12,6 +13,17 @@ const ContactUs = () => {
 
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const [showErrorAlert, setShowErrorAlert] = useState(false);
+
+  // Animaciones
+  const successAnimation = useSpring({
+    opacity: showSuccessAlert ? 1 : 0,
+    transform: showSuccessAlert ? 'translateY(0)' : 'translateY(-20px)',
+  });
+
+  const errorAnimation = useSpring({
+    opacity: showErrorAlert ? 1 : 0,
+    transform: showErrorAlert ? 'translateY(0)' : 'translateY(-20px)',
+  });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -80,28 +92,32 @@ const ContactUs = () => {
               <p className="text-lg text-gray-700">Háblanos, estamos aquí para ayudarte.</p>
             </div>
             {/* Alertas */}
-            {showSuccessAlert && (
-              <div className="flex items-center p-4 mb-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
-                <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-                </svg>
-                <span className="sr-only">Info</span>
-                <div>
-                  <span className="font-medium">¡Info!</span> Tu respuesta en el PQRS ha sido enviada.
+            <animated.div style={successAnimation}>
+              {showSuccessAlert && (
+                <div className="flex items-center p-4 mb-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
+                  <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                  </svg>
+                  <span className="sr-only">Info</span>
+                  <div>
+                    <span className="font-medium">¡Info!</span> Tu respuesta en el PQRS ha sido enviada.
+                  </div>
                 </div>
-              </div>
-            )}
-            {showErrorAlert && (
-              <div className="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
-                <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-                </svg>
-                <span className="sr-only">Info</span>
-                <div>
-                  <span className="font-medium">¡!</span> Tu respuesta en el PQRS ha sido errónea.
+              )}
+            </animated.div>
+            <animated.div style={errorAnimation}>
+              {showErrorAlert && (
+                <div className="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+                  <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                  </svg>
+                  <span className="sr-only">Info</span>
+                  <div>
+                    <span className="font-medium">¡!</span> Tu respuesta en el PQRS ha sido errónea.
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </animated.div>
             <form onSubmit={handleSubmit}>
               <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Nombre completo" name="full_name" value={formValues.full_name} onChange={handleInputChange} required />
               <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Correo electronico" name="email" value={formValues.email} onChange={handleInputChange} required />
