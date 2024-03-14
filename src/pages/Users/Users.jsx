@@ -50,11 +50,11 @@ const Users = () => {
                     alt={user.Nombres_Mv}
                     className="w-16 h-16 rounded-full object-cover"/>
                 </td>
-                <td className="px-4 py-2">{user.Nombres_Mv}</td>
-                <td className="px-4 py-2">{user.Email_Mv}</td>
-                <td className="px-4 py-2">{user.NumeroIdent_Mv}</td>
-                <td className="px-4 py-2">{user.FechaNac_Mv}</td>
-                <td className="px-4 py-2">
+                <td className="px-4 py-2 text-center">{user.Nombres_Mv}</td>
+                <td className="px-4 py-2 text-center">{user.Email_Mv}</td>
+                <td className="px-4 py-2 text-center">{user.NumeroIdent_Mv}</td>
+                <td className="px-4 py-2 text-center">{user.FechaNac_Mv}</td>
+                <td className="px-4 py-2 text-center">
                 <span
                   className={`px-2 py-1 rounded-full text-xs font-semibold ${
                     user.Estado? "bg-green-200 text-green-800": "bg-red-200 text-red-800"
