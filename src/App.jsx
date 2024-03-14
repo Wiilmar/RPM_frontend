@@ -6,6 +6,7 @@ import Users from './pages/Users/Users'
 import Login from './components/Login'
 import Gasolina from './pages/Gasoline/Gasoline'
 import Preguntas from './pages/Pqrs/Pqrs'
+import Motos from './pages/Motos/Motos'
 import { AuthProvider } from './context/authContext'
 import { ProtectedRoute } from './protectedRoute'
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/gasolina" element={<Gasolina />} />
           <Route path="/pqrs" element={<Preguntas />} />
+          <Route path="/motos" element={<Motos />}/>
         </Routes>
       </BrowserRouter>
     </AuthProvider>
