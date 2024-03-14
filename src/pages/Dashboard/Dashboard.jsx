@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import './style.css';
 import Pqrs from "../Pqrs/Pqrs"
+import Users from '../Users/Users';
+import Gasoline from '../Gasoline/Gasoline'
 
 const Dashboard = () => {
-  const [selectedCard, setSelectedCard] = useState('panelPrincipal');
+  const [selectedCard, setSelectedCard] = useState('users');
 
   return (
-    <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
+    <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black ">
       {/* Header */}
       <div className="fixed w-full flex items-center justify-between h-14 text-white z-10">
         <div className="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-blue-800 dark:bg-gray-800 border-none">
@@ -46,18 +48,18 @@ const Dashboard = () => {
           <ul className="flex flex-col py-4 space-y-1">
             <li className="px-5 hidden md:block">
               <div className="flex flex-row items-center h-8">
-                <div className="text-sm font-light tracking-wide text-gray-400 uppercase">Main</div>
+                <div className="text-sm font-light tracking-wide text-gray-400 uppercase">Panel de Control</div>
               </div>
             </li>
             <li>
               <button
-                onClick={() => setSelectedCard('panelPrincipal')}
+                onClick={() => setSelectedCard('users')}
                 className={`relative flex flex-row items-center h-11 w-full focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 ${selectedCard === 'Dashboard' ? 'bg-blue-800 dark:bg-gray-600' : ''}`}
               >
                 <span className="inline-flex justify-center items-center ml-4">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                 </span>
-                <span className="ml-2 text-sm tracking-wide truncate">Panel principal</span>
+                <span className="ml-2 text-sm tracking-wide truncate">Usuarios</span>
               </button>
             </li>
             <li>
@@ -113,22 +115,7 @@ const Dashboard = () => {
             </div>
           </div>
         )}
-        {/* -------- */}
-        {/* Gasolina */}
-        {selectedCard === 'gasolina' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
-            <div className="bg-blue-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
-              <div className="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
-                <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="stroke-current text-blue-800 dark:text-gray-800 transform transition-transform duration-500 ease-in-out"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-              </div>
-              <div className="text-right">
-                <p className="text-2xl">222</p>
-                <p>Card 2</p>
-              </div>
-            </div>
-          </div>
-        )}
-        {/* -------- */}
+        {/* -------- */}        
         {/* Rutas */}
         {selectedCard === 'rutas' && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
@@ -143,12 +130,21 @@ const Dashboard = () => {
             </div>
           </div>
         )}
+        {/* users */}
+        {selectedCard === 'users' && (
+          <Users />
+        )}
+        {/* gasolina */}
+        {selectedCard === 'gasolina' && (
+          <Gasoline />
+        )}
         {/* -------- */}
         {/* PQRS */}
         {selectedCard === 'pqrs' && (
           <Pqrs />
         )}
         {/* -------- */}
+        
       </div>
     </div>
   );
