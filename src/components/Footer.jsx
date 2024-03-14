@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="#"><img src={logoFB} className="h-10 md:h-8"/></a>
           </div>
         </div>
-          <img src={ logosSena } className="h-18 " />
+          <img src={ logosSena } className="h-16 " />
       </div>
     </footer>
   )

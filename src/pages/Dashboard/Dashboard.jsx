@@ -3,6 +3,8 @@ import './style.css';
 import Pqrs from "../Pqrs/Pqrs"
 import Users from '../Users/Users';
 import Gasoline from '../Gasoline/Gasoline'
+import Rutas from '../Rutas/Rutas'
+
 
 const Dashboard = () => {
   const [selectedCard, setSelectedCard] = useState('users');
@@ -95,41 +97,14 @@ const Dashboard = () => {
                 <span className="ml-2 text-sm tracking-wide truncate">P.Q.R.S.</span>
               </button>
             </li>
+            
           </ul>
           <p className="mb-14 px-5 py-3 hidden md:block text-center text-xs">Rutas Para Moteros @2024</p>
         </div>
       </div>
       {/* -------- */}
       <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
-        {/* Panel Principal */}
-        {selectedCard === 'panelPrincipal' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
-            <div className="bg-blue-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
-              <div className="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
-                <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="stroke-current text-blue-800 dark:text-gray-800 transform transition-transform duration-500 ease-in-out"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-              </div>
-              <div className="text-right">
-                <p className="text-2xl">111</p>
-                <p>Card 1</p>
-              </div>
-            </div>
-          </div>
-        )}
-        {/* -------- */}        
-        {/* Rutas */}
-        {selectedCard === 'rutas' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
-            <div className="bg-blue-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
-              <div className="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
-                <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="stroke-current text-blue-800 dark:text-gray-800 transform transition-transform duration-500 ease-in-out"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-              </div>
-              <div className="text-right">
-                <p className="text-2xl">333</p>
-                <p>Card 3</p>
-              </div>
-            </div>
-          </div>
-        )}
+                       
         {/* users */}
         {selectedCard === 'users' && (
           <Users />
@@ -137,12 +112,18 @@ const Dashboard = () => {
         {/* gasolina */}
         {selectedCard === 'gasolina' && (
           <Gasoline />
+          
+        )}
+        {/* gasolina */}
+        {selectedCard === 'rutas' && (
+          <Rutas />
         )}
         {/* -------- */}
         {/* PQRS */}
         {selectedCard === 'pqrs' && (
           <Pqrs />
         )}
+    
         {/* -------- */}
         
       </div>
