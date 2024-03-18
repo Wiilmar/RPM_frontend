@@ -1,5 +1,6 @@
 import { useState, } from 'react';
 import { useAuth } from '../../context/authContext';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 import Pqrs from "../Pqrs/Pqrs"
 import Users from '../Users/Users';
@@ -7,14 +8,17 @@ import Gasoline from '../Gasoline/Gasoline'
 import Rutas from '../Rutas/Rutas'
 
 
+
 const Dashboard = () => {
   const [selectedCard, setSelectedCard] = useState('users');
 
   const { logout } = useAuth();
 
+  const navigate = useNavigate();
+
   const handleLogout = () => {
     logout();
-
+    navigate('/');
   }
 
   return (
