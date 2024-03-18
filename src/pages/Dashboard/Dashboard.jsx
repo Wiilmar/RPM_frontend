@@ -32,7 +32,7 @@ const Dashboard = () => {
                 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
-            <input type="search" placeholder="Buscar" className="w-full pl-3 text-sm text-black outline-none focus:outline-none bg-transparent" />
+            <input type="search" placeholder="Buscar" className="w-full pl-3 text-sm text-black outline-none focus:outline-none bg-transparent" disabled/>
           </div>
           <ul className="flex items-center">
             <li>
