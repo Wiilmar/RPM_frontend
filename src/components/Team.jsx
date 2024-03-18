@@ -5,13 +5,13 @@ import picTalvaro from "../image/Home/pic_Talvaro.png"
 import picTcamilo from "../image/Home/pic_Tcamilo.png"
 import picTcristian from "../image/Home/pic_Tcristian.png"
 import picTluis from "../image/Home/pic_Tluis.png"
-import picTdaniel from "../image/Home/logo_sena.png"
+import picTdaniel from "../image/Home/pic_logoSena.png"
 import picTwilman from "../image/Home/pic_Twilman.png"
-import picIG from "../image/Home/pic_instagram.png"
+import picIG from "../image/Home/pic_logoInstagram.png"
 //import picDC from "../image/Home/pic_discord.png"
-import picFB from "../image/Home/pic_facebook.png"
-import picGitHub from "../image/Home/pic_github.png"
-import picWP from "../image/Home/pic_whatsapp.png"
+import picFB from "../image/Home/pic_logoFacebook.png"
+import picGitHub from "../image/Home/pic_logoGithub.png"
+import picWP from "../image/Home/pic_logoWhatsapp.png"
 
 const Team = () => {
     return (

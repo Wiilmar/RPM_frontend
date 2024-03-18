@@ -1,7 +1,7 @@
-import logosSena from "../image/sena.png"
-import logoIG from "../image/logoIG.png"
-import logoX from "../image/logoxd.png"
-import logoFB from "../image/logofb.png"
+import logoSena from "../image/Home/pic_logoSena.png"
+import logoIG from "../image/Home/pic_logoInstagram.png"
+import logoX from "../image/Home/pic_logoX.png"
+import logoFB from "../image/Home/pic_logoFacebook.png"
 
 const Footer = () => {
   return(
@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="#"><img src={logoFB} className="h-10 md:h-8"/></a>
           </div>
         </div>
-          <img src={ logosSena } className="h-16 " />
+          <img src={ logoSena } className="h-16 " />
       </div>
     </footer>
   )

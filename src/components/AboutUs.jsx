@@ -15,7 +15,7 @@ const AboutUs = () => {
                 {/* Primera Card: Mision */}
                 <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
                     <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-yellow-400 bg-whiteLight flex-shrink-0">
-                        <img src={ picQmision } alt="Logo de vision RPM" className="sm:w-16 sm:h-16 w-10 h-10 rounded-full object-cover"/>
+                        <img src={ picQmision } alt="Logo de vision RPM" className="sm:w-16 sm:h-16 w-10 h-10 object-cover"/>
                     </div>
                     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                         <h2 className="text-white text-2xl title-font font-medium mb-2"> Misi&#243;n </h2>
@@ -30,14 +30,14 @@ const AboutUs = () => {
                         <p className="leading-relaxed text-xl text-alain-right">En un plazo de cinco años, nuestra <span className="text-yellow-500"> visi&#243;n </span> es convertirnos en la aplicaci&#243;n l&#237;der y m&#225;s descargada para organizar y disfrutar de viajes en moto en todo el continente americano.</p>
                     </div>
                     <div className="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-yellow-400 bg-whiteLight flex-shrink-0">
-                        <img src={ picQvision } alt="Logo de vision RPM" className="sm:w-16 sm:h-16 w-10 h-10 rounded-full object-cover"/>
+                        <img src={ picQvision } alt="Logo de vision RPM" className="sm:w-16 sm:h-16 w-10 h-10 object-cover"/>
                     </div>
                 </div>
                 {/* ------------------- */}
                 {/* Tercera Card: Valores */}
                 <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
                     <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-yellow-400 bg-whiteLight flex-shrink-0">
-                        <img src={ picQvalores } alt="Logo de vision RPM" className="sm:w-16 sm:h-16 w-10 h-10 rounded-full object-cover"/>
+                        <img src={ picQvalores } alt="Logo de vision RPM" className="sm:w-16 sm:h-16 w-10 h-10 object-cover"/>
                     </div>
                     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                         <h2 className="text-white text-2xl title-font font-medium mb-2"> Valores </h2>

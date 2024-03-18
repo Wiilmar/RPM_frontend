@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import  LogoRPM from "../image/logoRPM.png"
+import  LogoRPM from "../image/Home/pic_logoRPM.png"
 
 const Nav = () => {
 
