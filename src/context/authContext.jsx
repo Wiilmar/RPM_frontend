@@ -35,7 +35,13 @@ export const AuthProvider=({children})=>{
             
         }
 
-    }
+    };
+
+    const logout = () => {
+        sessionStorage.removeItem('token');
+        setIsAuth(false);
+        setUser(null);
+      };
 
     useEffect(()=>{
         async function checkLogin(){
@@ -75,7 +81,8 @@ export const AuthProvider=({children})=>{
             singin,
             user,
             isAuth,
-            loading
+            loading,
+            logout
         }}>
             {children}
         </AuthContext.Provider>
