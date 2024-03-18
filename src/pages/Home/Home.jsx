@@ -75,7 +75,6 @@ export default Home
 toDo: Cambiar el Footer - V.2 
 toDo: Hacer el manual de usuario
 toDO: Hacer validaciones o restricciones en el PQRS - Wilman
-toDO: Cambiar la paleta de colores del menu Hamburguesa
 toDo: Lograr que en apartado de estadisticas los numeros esten vinculados a su respectiva cantidad de la base de de datos
 toDO: Lograr que cuando el usuario haga hover en algunas de las cards de los integrantes de RPM este cambia por otra imagen
 toDO: Crear un nuevo componente que se llame 'Politicas' para que el usuairo pueda leer nuestras politicas y directrices en el apartado Web

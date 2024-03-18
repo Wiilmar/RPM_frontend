@@ -26,8 +26,8 @@ const Users = () => {
   };
  
   return (     
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl text-white font-bold mb-6">Usuarios</h1>
+    <div className="container mx-auto py-8 px-5">
+      <h1 className="text-3xl text-white font-bold mb-6 text-center">Gesti&oacute;n de usuarios</h1>
         <div className="overflow-x-auto">
           <table className="table-auto w-full">
             <thead>
@@ -43,7 +43,7 @@ const Users = () => {
             </thead>
             <tbody>{users.map((user) => (
               <tr key={user._id} className="bg-white border-b">
-                <td className="px-4 py-2">
+                <td className="px-4 py-2 items-cente text-center">
                   <img src={user.ImageUser}alt={user.Nombres_Mv} className="w-16 h-16 rounded-full object-cover"/>
                 </td>
                 <td className="px-4 py-2 text-center">{user.Nombres_Mv}</td>

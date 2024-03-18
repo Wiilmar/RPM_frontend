@@ -70,11 +70,11 @@ const LasPreguntas = () => {
         </table>
       </div>
     </>*/
-<div className="container mx-auto px-4 py-8">
+<div className="container mx-auto px-5 py-8">
   <h1 className="text-3xl text-white font-bold mb-6 text-center">Gestión de PQRS</h1>
 
   <div className="mb-4 flex justify-between items-center">    
-    <select id="filter" value={filtro} onChange={handleFilter} className="block w-64 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+    <select id="filter" value={filtro} onChange={handleFilter} className="block w-64 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md mx-auto">
       <option value="">Todas las PQRS</option>
       <option value="Peticion">Petición</option>
       <option value="Queja">Queja</option>

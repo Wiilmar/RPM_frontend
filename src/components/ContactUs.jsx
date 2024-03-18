@@ -16,9 +16,8 @@ const ContactUs = () => {
 
   // Animaciones
   const successAnimation = useSpring({
-    opacity: showSuccessAlert ? 1 : 1, // valor de la opacidad al aparecer la alerta
+    opacity: showSuccessAlert ? 1 : 0,
     transform: showSuccessAlert ? 'translateY(0)' : 'translateY(-20px)',
-    config: { duration: 300 } // Duración de la animación
   });
 
   const errorAnimation = useSpring({
@@ -55,7 +54,7 @@ const ContactUs = () => {
       // Ocultar la alerta después de 5 segundos
       setTimeout(() => {
         setShowSuccessAlert(false);
-      }, 4000);
+      }, 5000);
 
     } catch (error) {
       console.error('Error al enviar los datos:', error);
@@ -65,16 +64,32 @@ const ContactUs = () => {
       // Ocultar la alerta de error después de 5 segundos
       setTimeout(() => {
         setShowErrorAlert(false);
-      }, 4000);
+      }, 5000);
     }
   };
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
+  const handleInputChange = ({ target: { name, value } }) => {
     setFormValues({
       ...formValues,
       [name]: value
     });
+  };
+
+
+  // Función para validar el nombre en tiempo real
+  const handleNameInput = (event) => {
+    const inputValue = event.target.value;
+    // Expresión regular para validar solo letras y espacios en blanco
+    const nameRegex = /^[a-zA-Z\s]*$/;
+    if (nameRegex.test(inputValue)) {
+      setFormValues({ ...formValues, full_name: inputValue });
+    }
+  };
+
+  // Función para verificar si el nombre es válido
+  const isValidName = (name) => {
+    const nameRegex = /^[a-zA-Z\s]*$/;
+    return nameRegex.test(name);
   };
 
   return (
@@ -82,7 +97,7 @@ const ContactUs = () => {
       {/* Contenido del formulario */}
       <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12 relative bg-center bg-cover"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${ bgPQRS })`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${bgPQRS})`
         }}
       >
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -93,7 +108,7 @@ const ContactUs = () => {
               <p className="text-xl text-white font-semibold"> ¿Que opinas de R.P.M.? </p>
             </div>
             {/* Alertas */}
-            <animated.div style={ successAnimation }>
+            <animated.div style={successAnimation}>
               {showSuccessAlert && (
                 <div className="flex items-center p-4 mb-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
                   <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -106,7 +121,7 @@ const ContactUs = () => {
                 </div>
               )}
             </animated.div>
-            <animated.div style={ errorAnimation }>
+            <animated.div style={errorAnimation}>
               {showErrorAlert && (
                 <div className="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
                   <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -119,9 +134,9 @@ const ContactUs = () => {
                 </div>
               )}
             </animated.div>
-            <form onSubmit={ handleSubmit }>
-              <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Nombre completo" name="full_name" value={formValues.full_name} onChange={handleInputChange} required />
-              <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Correo electronico" name="email" value={formValues.email} onChange={handleInputChange} required />
+            <form onSubmit={handleSubmit}>
+              <input className={`shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 ease-in-out ${isValidName(formValues.full_name) ? 'focus:border-blue-700 hover:border-black' : 'focus:border-red-500 hover:border-black'}`} type="text" placeholder="Nombre completo" name="full_name" value={formValues.full_name} onInput={handleNameInput} required />
+              <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-700 transition duration-300 ease-in-out hover:border-black" type="email" placeholder="Correo electronico" name="email" value={formValues.email} onChange={handleInputChange} required />
               <div className="mb-4 appearance-none rounded w-full py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 <select id="pqrs_type" name="pqrs_type" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" value={formValues.pqrs_type} onChange={handleInputChange} required>
                   <option value="" disabled selected>Tipo de PQRS</option>
@@ -134,15 +149,9 @@ const ContactUs = () => {
               <textarea className="shadow mb-4 min-h-0 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Escribe aquí tu mensaje" name="message" style={{ maxHeight: '200px', minHeight: '50px', overflowY: 'auto' }} value={formValues.message} onChange={handleInputChange} required />
               <div className="flex justify-between">
                 <input className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-6 py-3 text-center me-2 mb-2" type="submit" value="Enviar Mensaje" />
-                <input className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-6 py-3 text-center me-2 mb-2" type="reset" value="Restablecer" onClick={() => setFormValues({
-                  full_name: '',
-                  email: '',
-                  pqrs_type: '',
-                  message: ''
-                })} />
+                <input className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-6 py-3 text-center me-2 mb-2" type="reset" value="Restablecer" onClick={() => setFormValues({ full_name: '', email: '', pqrs_type: '', message: '' })} />
               </div>
             </form>
-
           </div>
         </div>
       </div>

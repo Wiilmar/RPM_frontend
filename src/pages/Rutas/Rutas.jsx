@@ -32,7 +32,7 @@ const Rutas = () => {
       ))}
     </>*/
     <>
-    <div className="px-8 py-4">
+    <div className="px-5 py-4">
       <h1 className="text-3xl py-8 text-white font-bold mb-4">Ultimas Rutas hechas por los usuarios</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {rutas.map((ruta) => (
