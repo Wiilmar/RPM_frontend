@@ -23,7 +23,7 @@ const Faq = () => {
         ,        
         {
             question: "¿Disponen de algún manual de usuario para entender el funcionamiento de la página web?",
-            answer: "¡Por supuesto! Tenemos un manual de usuario en la sección web. Podrás descargarlo haciendo clic 'AQUÍ'."
+            answer: "¡Por supuesto! En nuestra sección web, encontrarás un detallado manual de usuario. Para descargarlo, simplemente haz clic en el botón con el logo de un manual ubicado en la esquina inferior izquierda."
         },
     ];
 
@@ -32,11 +32,11 @@ const Faq = () => {
             <div className="mx-auto px-5 py-20 bg-amarillo w-full">
                 <div className="flex flex-col items-center">
                     <h2 className="font-bold text-4xl mt-5 tracking-tight">Preguntas frecuentes</h2>
-                    <p className="text-neutral-500 text-xl mt-3">&#34;Conozca las preguntas mas frecuentes de nuestra comunidad&#34;</p>
+                    <p className="text-gray-500 text-xl mt-3">&#34;Conozca las preguntas mas frecuentes de nuestra comunidad&#34;</p>
                 </div>
                 <div className="grid divide-y divide-white max-w-xl mx-auto mt-8">
                     {questions.map((item, index) => (
-                        <div key={index} className="py-5">
+                        <div key={ index } className="py-5">
                             <details className="group">
                                 <summary onClick={() => handleToggle(index)} className="flex justify-between items-center font-medium cursor-pointer list-none">
                                     <span>{item.question}</span>
