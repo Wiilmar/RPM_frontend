@@ -135,8 +135,8 @@ const ContactUs = () => {
               )}
             </animated.div>
             <form onSubmit={handleSubmit}>
-              <input className={`shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 ease-in-out ${isValidName(formValues.full_name) ? 'focus:border-blue-700 hover:border-black' : 'focus:border-red-500 hover:border-black'}`} type="text" placeholder="Nombre completo" name="full_name" value={formValues.full_name} onInput={handleNameInput} required />
-              <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-700 transition duration-300 ease-in-out hover:border-black" type="email" placeholder="Correo electronico" name="email" value={formValues.email} onChange={handleInputChange} required />
+              <input className={`shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline transition duration-300 ease-in-out ${isValidName(formValues.full_name) ? 'focus:border-blue-700 hover:border-black' : 'focus:border-red-500 hover:border-black'}`} type="text" placeholder="Nombre completo" name="full_name" value={formValues.full_name} onInput={handleNameInput} minLength={9} maxLength={70} required />
+              <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-700 transition duration-300 ease-in-out hover:border-black" type="email" placeholder="Correo electronico" name="email" value={formValues.email} onChange={handleInputChange} maxLength={40} required />
               <div className="mb-4 appearance-none rounded w-full py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 <select id="pqrs_type" name="pqrs_type" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" value={formValues.pqrs_type} onChange={handleInputChange} required>
                   <option value="" disabled selected>Tipo de PQRS</option>
@@ -146,7 +146,7 @@ const ContactUs = () => {
                   <option value="Sugerencia">Sugerencia</option>
                 </select>
               </div>
-              <textarea className="shadow mb-4 min-h-0 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Escribe aquí tu mensaje" name="message" style={{ maxHeight: '200px', minHeight: '50px', overflowY: 'auto' }} value={formValues.message} onChange={handleInputChange} required />
+              <textarea className="shadow mb-4 min-h-0 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Escribe aquí tu mensaje" name="message" style={{ maxHeight: '200px', minHeight: '50px', overflowY: 'auto' }} value={formValues.message} onChange={handleInputChange} maxLength={520} required />
               <div className="flex justify-between">
                 <input className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-6 py-3 text-center me-2 mb-2" type="submit" value="Enviar Mensaje" />
                 <input className="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-6 py-3 text-center me-2 mb-2" type="reset" value="Restablecer" onClick={() => setFormValues({ full_name: '', email: '', pqrs_type: '', message: '' })} />
