@@ -3,6 +3,7 @@ import logoPS from '../image/Home/logo_PlayStore.png'
 import logoApk from '../image/Home/logo_apk.png'
 
 import pic_BGYecid from '../image/Home/pic_MVYecid2.png'
+import pic_galleryA from '../image/Home/pic_galleryA.jpg'
 
 const Gallery = () => {
     return (
@@ -32,10 +33,10 @@ const Gallery = () => {
                     <div className="flex flex-wrap -m-4">
                         <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4 w-full">
                             <div className="flex relative h-[500px] lg:h-[400px] sm:h-[300px] w-full">
-                                <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_BGYecid } />
+                                <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_galleryA } />
                                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                                    <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">El subtitulo </h2>
-                                    <p className="leading-relaxed"> Descripcion de la imagen</p>
+                                    <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"> Las cataratas del Iguaz&uacute; </h2>
+                                    <p className="leading-relaxed"> Son un conjunto de cascadas impresionantes ubicadas en la frontera entre Argentina y Brasil. Están formadas por alrededor de 275 cascadas que se extienden a lo largo de aproximadamente 2.7 kilómetros del río Iguaz&uacute;. Estas cataratas son una de las maravillas naturales m&aacute;s famosas y visitadas del mundo. </p>
                                 </div>
                             </div>
                         </div>

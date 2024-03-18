@@ -83,9 +83,9 @@ const Team = () => {
                         <p className="text-xl group-hover:text-black"> Programador Backend </p>
                         <ul className="flex justify-center mt-4 space-x-4">
                             <li>
-                                <a href="#" target="_blank" className="text-[#131314] hover:text-gray-900 dark:hover:text-black inline-block transform hover:scale-150 transition-transform duration-300">
+                                <a href="https://wa.me/+573173394816" target="_blank" className="text-[#131314] hover:text-gray-900 dark:hover:text-black inline-block transform hover:scale-150 transition-transform duration-300">
                                     <svg className="w-9 h-9" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                                        <image href={ picFB } x="1" y="0" height="20" width="20"/>
+                                        <image href={ picWP } x="2" y="0" height="21" width="21"/>
                                     </svg>
                                 </a>
                             </li>
@@ -97,12 +97,12 @@ const Team = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" className="text-[#131314] hover:text-gray-900 dark:hover:text-black inline-block transform hover:scale-150 transition-transform duration-300">
-                                    <svg className="w-9 h-9" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                                        <image href={ picWP } x="1" y="0" height="20" width="20"/>
+                                <a href="https://www.instagram.com/aaldairtorres?igsh=emJveHZtcGVpMDZw&utm_source=qr" target="_blank" className="text-[#131314] hover:text-gray-900 dark:hover:text-black inline-block transform hover:scale-150 transition-transform duration-300">
+                                    <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                                        <image href={ picIG } x="2" y="0" height="20" width="20"/>
                                     </svg>
                                 </a>
-                            </li>
+                            </li> 
                         </ul>
                     </div>
                     {/* ------------------ */}
@@ -138,7 +138,7 @@ const Team = () => {
                             <li>
                                 <a href="https://wa.me/+573245533682" target="_blank" className="text-[#131314] hover:text-gray-900 dark:hover:text-black inline-block transform hover:scale-150 transition-transform duration-300">
                                     <svg className="w-9 h-9" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                                        <image href={ picWP } x="2" y="0" height="20" width="20"/>
+                                        <image href={ picWP } x="2" y="0" height="21" width="21"/>
                                     </svg>
                                 </a>
                             </li>

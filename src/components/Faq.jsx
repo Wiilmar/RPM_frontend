@@ -9,20 +9,21 @@ const Faq = () => {
 
     const questions = [
         {
-            question: "Que es RPM?",
-            answer: "El nombre de RPM es el acronimo de Rutas Para Moteros"
+            question: "¿Que es R.P.M.?",
+            answer: "El nombre 'RPM' es el acrónimo de 'Rutas Para Moteros'."
         },
         {
-            question: "Puedo registrar mi moto como yo quiera?",
-            answer: "Si claro!, en la aplicacion eres libre de poder registrar y guardar con los datos necesarios las motos que tu quieras para que las puedas usar, no es necesario que siempre uses una sola moto"
+            question: "¿Tengo la libertad de registrar y utilizar las motos según mis preferencias?",
+            answer: "Sí, por supuesto. En la aplicación, tienes la libertad de registrar y guardar la información necesaria de las motos que desees usar. No es necesario que utilices siempre la misma moto."
         },
         {
-            question: "Que hace diferente la aplicacion a usar google maps?",
-            answer: "Creemos fielmente que cada usuario es libre de elegir que herramienta usar para su viaje, no obstante en nuestra aplicacion encontraras elementos muy interesantes y de ayuda para que puedas realizar tu viaje con mayor comodidad, ta les como: un apartado de presupuesto generado en base a la eleccion de tu punto de inicio y punto de llegada y el consumo de tu motora. Un apartado de garaje el cual podras registrar y guardar tus motos para que seas libre de seleccionar la que quieras en cada viaje que realices. un apartado de tus rutas guardadas, el cual te permite guardar tus rutas y si asi lo deseas recomendarlas por la buena experiencia que tuviste"
-        },        
+            question: "¿Qué diferencia a esta aplicación de usar Google Maps?",
+            answer: "Valoramos la libertad de elección de cada usuario para su viaje. Sin embargo, deseamos destacar que ofrecemos una serie de herramientas que pueden hacer tu experiencia aún más placentera y conveniente. Entre estas funcionalidades, se incluye un apartado de presupuesto, el cual se genera automáticamente basado en la selección de tu punto de partida, destino y el consumo de combustible de tu moto. También disponemos de un práctico garaje virtual donde puedes almacenar y gestionar tus motocicletas, permitiéndote seleccionar la más adecuada para cada viaje. Además, ofrecemos un sistema de rutas guardadas que te permite almacenar tus trayectos preferidos y, si lo deseas, compartirlos con otros usuarios basándote en tu experiencia personal."
+        }
+        ,        
         {
-            question: "Montate en mi motora",
-            answer: "pero vioasdji4enduya"
+            question: "¿Disponen de algún manual de usuario para entender el funcionamiento de la página web?",
+            answer: "¡Por supuesto! Tenemos un manual de usuario en la sección web. Podrás descargarlo haciendo clic 'AQUÍ'."
         },
     ];
 
@@ -33,7 +34,7 @@ const Faq = () => {
                     <h2 className="font-bold text-4xl mt-5 tracking-tight">Preguntas frecuentes</h2>
                     <p className="text-neutral-500 text-xl mt-3">&#34;Conozca las preguntas mas frecuentes de nuestra comunidad&#34;</p>
                 </div>
-                <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+                <div className="grid divide-y divide-white max-w-xl mx-auto mt-8">
                     {questions.map((item, index) => (
                         <div key={index} className="py-5">
                             <details className="group">
