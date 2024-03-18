@@ -72,9 +72,12 @@ export default Home
 /*
 *TAREAS PENDIENTES 
 
-toDo: Cambiar imagenes del modulo "Quienes Somos?"
-toDo: Corregir problemas de encaje con el footer - DANIEL 
-toDo: Cambiar el tamano de el nav
-toDo: Solucionar el problema de responsividad en la card presupeusto
-toDO: Hacer que el boton de regresar a la pagina principal aparezca en la sgunda seccion de lo contrario deera de estar oculta
+toDo: Cambiar el Footer - V.2 
+toDo: Hacer el manual de usuario
+toDO: Hacer validaciones o restricciones en el PQRS
+toDO: Cambiar la paleta de colores del menu Hamburguesa
+toDo: Lograr que en apartado de estadisticas los numeros esten vinculados a su respectiva cantidad de la base de de datos
+toDO: Lograr que cuando el usuario haga hover en algunas de las cards de los integrantes de RPM este cambia por otra imagen
+toDO: Crear un nuevo componente que se llame 'Politicas' para que el usuairo pueda leer nuestras politicas y directrices en el apartado Web
+toDO: Crear las lineas curveadas de cada componente como esta establecido en el FIGMA.
 */
