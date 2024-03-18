@@ -80,4 +80,6 @@ toDo: Lograr que en apartado de estadisticas los numeros esten vinculados a su r
 toDO: Lograr que cuando el usuario haga hover en algunas de las cards de los integrantes de RPM este cambia por otra imagen
 toDO: Crear un nuevo componente que se llame 'Politicas' para que el usuairo pueda leer nuestras politicas y directrices en el apartado Web
 toDO: Crear las lineas curveadas de cada componente como esta establecido en el FIGMA.
+-------------------------------------------------
+toDO: Hacer que en el apartado de PQRS cuando la responsividad llegue a 1100px de ancho la iamgen de fondo cambie por otra
 */

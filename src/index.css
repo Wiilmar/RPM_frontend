@@ -7,3 +7,35 @@ body {
     margin: 0 auto;
 }
 
+/* ----- Diseno del componente ContactUS ------- */
+
+/* Definición de la imagen de fondo para pantallas grandes */
+.bg-container {
+    position: relative;
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos toda la altura de la ventana del navegador */
+    overflow-x: hidden; /* Evita que el contenido horizontal se desborde */
+  }
+  
+  /* Estilos para la imagen de fondo en pantallas grandes */
+  .bg-pqrs {
+    background-image: url('ruta/de/imagen-grande.jpg');
+  }
+  
+  /* Estilos para la imagen de fondo en pantallas pequeñas */
+  .bg-pqrs-mobile {
+    background-image: url('ruta/de/imagen-pequeña.jpg');
+  }
+  
+  /* Media query para pantallas con un ancho máximo de 1100px */
+  @media (max-width: 1100px) {
+    /* Ocultar la imagen de fondo para pantallas grandes */
+    .bg-pqrs {
+      display: none;
+    }
+  
+    /* Asegurar que la imagen de fondo para pantallas pequeñas se muestre */
+    .bg-pqrs-mobile {
+      display: block;
+    }
+  }
+/* ------------------------------------------ */

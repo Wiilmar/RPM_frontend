@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import picPQRS from "../image/Home/pic_pqrs.png";
+import bgPQRS from "../image/Home/pic_bgPQRS3.jpg";
 import { enviarPQRS } from '../api/pqrs';
 
 const ContactUs = () => {
@@ -82,7 +82,7 @@ const ContactUs = () => {
       {/* Contenido del formulario */}
       <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12 relative bg-center bg-cover"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${picPQRS})`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${ bgPQRS })`
         }}
       >
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -93,7 +93,7 @@ const ContactUs = () => {
               <p className="text-xl text-white font-semibold"> ¿Que opinas de R.P.M.? </p>
             </div>
             {/* Alertas */}
-            <animated.div style={successAnimation}>
+            <animated.div style={ successAnimation }>
               {showSuccessAlert && (
                 <div className="flex items-center p-4 mb-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
                   <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -106,7 +106,7 @@ const ContactUs = () => {
                 </div>
               )}
             </animated.div>
-            <animated.div style={errorAnimation}>
+            <animated.div style={ errorAnimation }>
               {showErrorAlert && (
                 <div className="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
                   <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -119,7 +119,7 @@ const ContactUs = () => {
                 </div>
               )}
             </animated.div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={ handleSubmit }>
               <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Nombre completo" name="full_name" value={formValues.full_name} onChange={handleInputChange} required />
               <input className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Correo electronico" name="email" value={formValues.email} onChange={handleInputChange} required />
               <div className="mb-4 appearance-none rounded w-full py-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
