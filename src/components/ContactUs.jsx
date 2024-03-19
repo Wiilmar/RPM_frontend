@@ -51,20 +51,20 @@ const ContactUs = () => {
       // Mostrar la alerta de éxito
       setShowSuccessAlert(true);
 
-      // Ocultar la alerta después de 5 segundos
+      // Ocultar la alerta después de 4 segundos
       setTimeout(() => {
         setShowSuccessAlert(false);
-      }, 5000);
+      }, 4000);
 
     } catch (error) {
       console.error('Error al enviar los datos:', error);
       // Mostrar la alerta de error
       setShowErrorAlert(true);
 
-      // Ocultar la alerta de error después de 5 segundos
+      // Ocultar la alerta de error después de 4 segundos
       setTimeout(() => {
         setShowErrorAlert(false);
-      }, 5000);
+      }, 4000);
     }
   };
 
