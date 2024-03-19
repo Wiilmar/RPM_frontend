@@ -31,5 +31,6 @@ export default {
       backgroundImage: {}
     },
   },
-  plugins: [],
+  plugins: [
+	],
 }

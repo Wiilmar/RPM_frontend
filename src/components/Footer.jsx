@@ -19,12 +19,14 @@ const Footer = () => {
         <div className="mb-4 md:mb-0">
           <h2 className="text-white text-3xl font-bold mb-4">Síguenos</h2>
           <div className="flex">
-            <a href="#" className="mr-4"><img src={logoIG} className="h-10 md:h-8"/></a>
-            <a href="#" className="mr-4"><img src={logoX} className="h-10 md:h-8"/></a>
-            <a href="#"><img src={logoFB} className="h-10 md:h-8"/></a>
+            <a href="https://www.instagram.com/not.denail/" target="_blank" className="mr-4"><img src={logoIG} className="h-10 md:h-8"/></a>
+            <a href="#" target="_blank" className="mr-4"><img src={logoX} className="h-10 md:h-8"/></a>
+            <a href="https://www.facebook.com/danielLubor?mibextid=ZbWKwL" target="_blank" ><img src={logoFB} className="h-10 md:h-8"/></a>
           </div>
         </div>
-          <img src={ logoSena } className="h-16 " />
+          <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank">
+            <img src={ logoSena } className="h-16 " />
+          </a>          
       </div>
     </footer>
   )

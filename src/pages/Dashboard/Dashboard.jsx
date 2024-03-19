@@ -30,7 +30,7 @@ const Dashboard = () => {
       <div className="fixed w-full flex items-center justify-between h-14 text-white z-10">
         <div className="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-blue-800 dark:bg-gray-800 border-none">
           <img className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden" src={ logoRPM } alt="Logo RPM" />
-          <span className="hidden md:block">ADMIN</span>
+          <span className="hidden font-bold md:block">ADMIN</span>
         </div>
         <div className="flex justify-between items-center h-14 bg-blue-800 dark:bg-gray-800 header-right">
           <div className="bg-white rounded flex items-center w-full max-w-xl mr-4 p-2 shadow-sm border border-gray-200">
@@ -60,12 +60,12 @@ const Dashboard = () => {
       </div>
       {/* -------- */}
       {/* SideBar */}
-      <div className="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-blue-900 dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-10 sidebar">
+      <div className="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-blue-900 dark:bg-blueDark h-full text-white transition-all duration-300 border-none z-10 sidebar">
         <div className="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
           <ul className="flex flex-col py-4 space-y-1">
             <li className="px-5 hidden md:block">
               <div className="flex flex-row items-center h-8">
-                <div className="text-sm font-light tracking-wide text-gray-400 uppercase">Panel de Control</div>
+                <div className="text-sm font-bold tracking-wide text-gray-400 uppercase">Panel de Control</div>
               </div>
             </li>
             <li>

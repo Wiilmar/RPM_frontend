@@ -14,23 +14,7 @@ const Rutas = () => {
     setRutas(response.data.ruta);
   };
 
-  return (
-    /*
-    <>
-      <h1>Rutas</h1>
-      {rutas.map((ruta) => (
-        <div key={ruta._id}>
-          <img src={ruta.FotoRuta} alt="" />
-          <p>Nombre de la Ruta; {ruta.NombreRuta}</p>
-          <p>Calificacion; {ruta.CalificacionRuta}</p>
-          <p>Descripcion; {ruta.DescripcionRuta }</p>         
-          <p>Km totales; {ruta.KmTotalesRuta}</p>
-          <p>Presupuesto;{ruta.PresupuestoGas}</p>          
-          <p>Fecha del tal; {ruta.createdAt}</p>
-          <p>Moto tal; {ruta.motoviajero}</p>
-        </div>
-      ))}
-    </>*/
+  return (    
     <>
     <div className="px-5 py-4">
       <h1 className="text-3xl py-8 text-white font-bold mb-4">Ultimas Rutas hechas por los usuarios</h1>

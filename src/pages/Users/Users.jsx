@@ -27,7 +27,7 @@ const Users = () => {
 
   return (
     <div className="container mx-auto py-8 px-5">
-      <h1 className="text-3xl text-white font-bold mb-6 text-center">Gesti&oacute;n de usuarios</h1>
+      <h1 className="text-3xl text-white font-bold mb-6 text-left">Gesti&oacute;n de usuarios</h1>
       <div className="overflow-x-auto">
         <table className="table-auto w-full">
           <thead>
