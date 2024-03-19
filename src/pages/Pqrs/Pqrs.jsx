@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { getPQRS, deletePQRS } from "../../api/pqrs";
+import { getPQRS, deletePQRS, actualizarEstadoPQRS } from "../../api/pqrs";
 
 //----- Importacion de imagenes
 import pic_iconBasura from "../../image/DashBoard/pic_iconBasura.png"
-import pic_iconTime from "../../image/DashBoard/pic_iconTime.png"
+// import pic_iconTime from "../../image/DashBoard/pic_iconTime.png"
 import pic_iconCheck from "../../image/DashBoard/pic_iconCheck.png"
 
 const LasPreguntas = () => {
@@ -16,6 +16,7 @@ const LasPreguntas = () => {
 
   const fetchPQRS = async () => {
     const response = await getPQRS();
+    console.log(response.data)
     setPqrs(response.data);
   };
 
@@ -42,8 +43,16 @@ const LasPreguntas = () => {
     }
   };
 
-  return (
+  const CambiarEstado = async (id, estado) => {
+    try {
+      await actualizarEstadoPQRS(id, !estado);      
+      fetchPQRS();
+    } catch (error) {
+      console.error('Error al actualizar el estado de la PQRS:', error);
+    }
+  };
 
+  return (
     <div className="container mx-auto px-5 py-8">
       <h1 className="text-3xl text-white font-bold mb-6 text-center">Gestión de PQRS</h1>
 
@@ -61,30 +70,27 @@ const LasPreguntas = () => {
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nombre</th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Correo</th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tipo de PQRS</th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Asunto</th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Acciones</th>
+              <th scope="col" className="px-6 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">Nombre</th>
+              <th scope="col" className="px-6 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">Correo</th>
+              <th scope="col" className="px-6 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">Tipo de PQRS</th>
+              <th scope="col" className="px-6 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">Asunto</th>
+              <th scope="col" className="px-6 py-3 text-left text-xs font-bold text-black uppercase tracking-wider">Acciones</th>
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
             {filteredPQRS().map((pqr) => (
-              <tr key={pqr._id} className="hover:bg-gray-100 transition-colors duration-200">
+              <tr key={pqr._id} className={`hover:bg-gray-100 transition-colors duration-200 ${pqr.estado === false ? 'bg-pendiente' : pqr.estado === true ? 'bg-verdemelamuerde' : ''}`}>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{pqr.nombreusuario}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{pqr.emailusuario}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{pqr.asuntopqrs}</td>
                 <td className="px-6 py-4 whitespace-normal text-sm text-gray-500 max-w-sm truncate">{pqr.textopqrs}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                   <div className="flex space-x-2">
-                    <button className="inline-flex items-center px-2 py-1 border border-transparent text-xs font-medium rounded text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                      <img src={pic_iconCheck} alt="Eliminar" className="h-4 w-4" style={{ filter: 'invert(100%)' }} />
-                    </button>
-                    <button className="inline-flex items-center px-2 py-1 border border-transparent text-xs font-medium rounded text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                      <img src={pic_iconTime} alt="Eliminar" className="h-4 w-4" style={{ filter: 'invert(100%)' }} />
-                    </button>
+                    <button className="inline-flex items-center px-2 py-1 border border-transparent text-xs font-medium rounded text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" onClick={() => CambiarEstado(pqr._id, pqr.estado)}>
+                      <img src={pic_iconCheck} alt="Respondida" className="h-4 w-4" style={{ filter: 'invert(100%)' }}/>
+                    </button>                  
                     <button className="inline-flex items-center px-2 py-1 border border-transparent text-xs font-medium rounded text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" title="Borrar" onClick={() => handleEliminarPQRS(pqr._id)}>
-                      <img src={pic_iconBasura} alt="Eliminar" className="h-4 w-4" style={{ filter: 'invert(100%)' }} />
+                      <img src={pic_iconBasura} alt="Eliminar" className="h-4 w-4" style={{ filter: 'invert(100%)' }}/>
                     </button>
                   </div>
                 </td>
@@ -94,56 +100,7 @@ const LasPreguntas = () => {
         </table>
       </div>
     </div>
-
   );
 };
 
 export default LasPreguntas;
-
-
-
-
-/*
-    <>
-      <h1 >Preguntas</h1>
-
-      <div>
-        <select value={filtro} onChange={handleFilter}>
-          <option value="">Todas las PQRS</option>
-          <option value="Peticion">Petición</option>
-          <option value="Queja">Queja</option>
-          <option value="Reclamo">Reclamo</option>
-          <option value="Sugerencia">Sugerencia</option>
-        </select>
-      </div>
-
-      <div>
-        <table >
-          <thead >
-            <tr>
-              <th >Nombre</th>
-              <th >Correo</th>
-              <th >Tipo de PQRS</th>
-              <th >Asunto</th>
-              <th >Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filteredPQRS().map((pqr) => (
-              <tr key={pqr._id}>
-                <td >{pqr.nombreusuario}</td>
-                <td >{pqr.emailusuario}</td>
-                <td >{pqr.asuntopqrs}</td>
-                <td >{pqr.textopqrs}</td>
-                <td >
-                  <button>Respondida</button>
-                  <button>En Proceso</button>
-                  <button>Sin Responder</button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </>*/
-

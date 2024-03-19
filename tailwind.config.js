@@ -15,7 +15,9 @@ export default {
         whiteThin: "#E3E3E3",
         whiteLight: "#D9D9D9",
         azulclaro: "#E0F4FF",
-        rojo: "FF0000"
+        rojo: "FF0000",
+        verdemelamuerde: "#CEE49A",
+        pendiente: "#FAECA6",
       },
       keyframes: {
         fadeIn: {
