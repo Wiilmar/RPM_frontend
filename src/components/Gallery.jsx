@@ -37,7 +37,7 @@ const Gallery = () => {
                         <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4 w-full">
                             <div className="flex relative h-[500px] lg:h-[400px] sm:h-[300px] w-full">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_galleryA } />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-1 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"> El Parque Caldas </h2>
                                     <p className="leading-relaxed"> El Parque Caldas es un ic&oacute;nico espacio p&uacute;blico ubicado en el coraz&oacute;n del centro hist&oacute;rico de la ciudad de Popay&aacute;n, en Colombia. Este parque es uno de los lugares m&aacute;s emblem&aacute;ticos de la ciudad, conocido por su belleza arquitect&oacute;nica, su rica historia y su vibrante ambiente cultural. </p>
                                 </div>
@@ -46,7 +46,7 @@ const Gallery = () => {
                         <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4 w-full">
                             <div className="flex relative h-[500px] lg:h-[400px] sm:h-[300px] w-full">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_galleryB } />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-1 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"> Puente del Humilladero </h2>
                                     <p className="leading-relaxed"> El Puente del Humilladero es una estructura hist&oacute;rica que se erige majestuosamente en la ciudad de Popay&aacute;n, Colombia. Construido en el siglo XVIII, este puente es un hito arquitect&oacute;nico que refleja la rica herencia colonial de la ciudad y su importancia hist&oacute;rica.</p>
                                 </div>
@@ -55,7 +55,7 @@ const Gallery = () => {
                         <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4 w-full">
                             <div className="flex relative h-[500px] lg:h-[400px] sm:h-[300px] w-full">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_galleryC } />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-1 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"> Morro del Tulc&aacute;n </h2>
                                     <p className="leading-relaxed"> El Morro del Tulc&aacute;n es una prominente formaci&oacute;n geol&oacute;gica que se alza majestuosamente en las afueras de la ciudad de Popay&aacute;n. También llamado &#39;Cerro de Tulc&aacute;n&#39;, este escarpado monte ofrece vistas panor&aacute;micas impresionantes de la ciudad y sus alrededores. </p>
                                 </div>
@@ -64,7 +64,7 @@ const Gallery = () => {
                         <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4 w-full">
                             <div className="flex relative h-[500px] lg:h-[400px] sm:h-[300px] w-full">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_galleryD } />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-1 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"> Cerro de las Tres Cruces </h2>
                                     <p className="leading-relaxed"> El Cerro de las Tres Cruces es una prominente elevaci&oacute;n ubicada en las afueras de la ciudad de Popay&aacute;n. Este cerro recibe su nombre debido a las tres cruces que coronan su cima, las cuales son visibles desde varios puntos de la ciudad y sus alrededores. </p>
                                 </div>
@@ -73,7 +73,7 @@ const Gallery = () => {
                         <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4 w-full">
                             <div className="flex relative h-[500px] lg:h-[400px] sm:h-[300px] w-full">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_galleryE } />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-1 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"> Cerro de La Tetilla </h2>
                                     <p className="leading-relaxed"> El Cerro de La Tetilla es una prominente caracter&iacute;stica topogr&aacute;fica que se eleva sobre la ciudad de Popay&aacute;n. Es un punto de referencia importante y un &iacute;cono natural tanto para los residentes locales como para los visitantes de la ciudad. </p>
                                 </div>
@@ -82,7 +82,7 @@ const Gallery = () => {
                         <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4 w-full">
                             <div className="flex relative h-[500px] lg:h-[400px] sm:h-[300px] w-full">
                                 <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src={ pic_galleryF } />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 relative z-1 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"> Parroquia Amo Jes&uacute;s de Yanaconas </h2>
                                     <p className="leading-relaxed"> La Parroquia Amo Jes&uacute;s de Yanaconas en Popay&aacute;n es un lugar de profundo significado religioso y cultural. Situada en el barrio de Yanaconas, esta parroquia es reconocida por su hermosa arquitectura colonial y su importancia como centro de fe para la comunidad local. </p>
                                 </div>

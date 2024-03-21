@@ -10,6 +10,7 @@ import Home from './pages/Home/Home'
 import Dashboard from './pages/Dashboard/Dashboard'
 import Login from './components/Login'
 import Preguntas from './pages/Pqrs/Pqrs'
+import TermsAndConditions from './components/TermsAndConditions'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/pqrs" element={<Preguntas />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
