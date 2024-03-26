@@ -10,6 +10,8 @@ export default {
         black: "#000000",
         blueDark: "#000814",
         blueLight: "#003566",
+        blueLightTwo: "#0056D8",
+        yellowLightTwo: "#FFA500",
         amarillo: "#FFC300",
         amarilloTitle: "#DBAC00",
         whiteThin: "#E3E3E3",

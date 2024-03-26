@@ -38,32 +38,32 @@ const Home = () => {
         });
     };
     return (
-      <>
-        <Nav />
-        <Information />
-        <OurServices />
-        <AboutUs />
-        <OurExperiences />
-        <Statistics />        
-        <Gallery />
-        <Faq />
-        <Team />
-        <ContactUs />
-        <Footer></Footer>
-        
-        {/* Boton para que el usuario sea enviado al principio de la pagina */}
-        <section>
-            {visible && (
-                <button onClick={scroll} className={'z-50 fixed bottom-8 right-8 bg-blue-500 text-white hover:text-black hover:bg-amarillo px-2 py-2 rounded-full transition duration-300'}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-15 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18"/>
-                    </svg>
-                </button>
-            )}
-        </section>
-        <Cookies />
-        {/* ------------------- */}
-      </>
+        <>
+            <Nav />
+            <Information />
+            <OurServices />
+            <AboutUs />
+            <OurExperiences />
+            <Statistics />
+            <Gallery />
+            <Faq />
+            <Team />
+            <ContactUs />
+            <Footer></Footer>
+
+            {/* Boton para que el usuario sea enviado al principio de la pagina */}
+            <section>
+                {visible && (
+                    <button onClick={scroll} className={'z-50 fixed bottom-8 right-8 bg-blueLightTwo text-white px-2 py-2 rounded-full transition-transform duration-300 hover:text-black hover:bg-yellowLightTwo hover:scale-110'}>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-15 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeWidth={1} d="M16 15a1 1 0 0 1-.707-.293L12 11.414l-3.293 3.293a1 1 0 1 1-1.414-1.414l4-4a1 1 0 0 1 1.414 0l4 4A1 1 0 0 1 16 15z" />
+                        </svg>
+                    </button>
+                )}
+            </section>
+            <Cookies />
+            {/* ------------------- */}
+        </>
     )
 }
 
