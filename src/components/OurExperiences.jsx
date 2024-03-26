@@ -6,10 +6,10 @@ import sujetaTres from "../image/Home/pic_perfilUserTres.jpg"
 const OurExperiences = () => {
     return(
         <>
-        <section>
-            <div id="experiencias" className="relative items-center w-full px-5 py-7 mx-auto md:px-12 lg:px-24 max-w-7xl pb-20">
-                <div className="flex flex-col text-center w-full ">
-                    <h1 className="text-4xl font-bold title-font py-20 text-black">¡Nuestras Experiencias!</h1>
+        <section id="experiencias" className="my-32">
+            <div className="relative items-center w-full px-5 py-7 mx-auto md:px-12 lg:px-24 max-w-7xl pb-20">
+                <div className="flex flex-col text-center w-full mb-20 ">
+                    <h1 className="text-4xl font-bold title-font py-10 text-black">¡Nuestras Experiencias!</h1>
                 </div>
 
                 <div className="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-3">
