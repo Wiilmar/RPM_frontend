@@ -54,7 +54,7 @@ const Home = () => {
         {/* Boton para que el usuario sea enviado al principio de la pagina */}
         <section>
             {visible && (
-                <button onClick={scroll} className={'fixed bottom-8 right-8 bg-blue-500 text-white hover:text-black hover:bg-amarillo px-2 py-2 rounded-full transition duration-300'}>
+                <button onClick={scroll} className={'z-50 fixed bottom-8 right-8 bg-blue-500 text-white hover:text-black hover:bg-amarillo px-2 py-2 rounded-full transition duration-300'}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-15 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18"/>
                     </svg>
