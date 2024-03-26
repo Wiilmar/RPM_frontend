@@ -6,9 +6,9 @@ import picQvalores from "../image/Home/pic_Qvalores.png"
 const AboutUs = () => {
     return (
         <>
-            <div className="relative bg-yellow-800">
+            <div className="border-none relative bg-yellow-800">
                 {/* Primer ola */}
-                <svg className="absolute top-0 left-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <svg className="absolute top-0 left-0 w-full" xmlns="http://www.w3.org/2000/svg" style={{ top: '-2px'}} viewBox="0 0 1440 320">
                     <path fill="#ffffff" fillOpacity="1" d="M0,96L60,112C120,128,240,160,360,176C480,192,600,192,720,160C840,128,960,64,1080,58.7C1200,53,1320,107,1380,133.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
                 </svg>
 
@@ -21,7 +21,7 @@ const AboutUs = () => {
                 <svg className="absolute top-0 left-0 w-full z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#000814" fillOpacity="0.4" d="M0,160L60,154.7C120,149,240,139,360,133.3C480,128,600,128,720,149.3C840,171,960,213,1080,213.3C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
                 </svg>
-                <section className="text-gray-400 bg-blueDark body-font mt-[-83px] pt-20 2xl:pt-56 lg:pt-52 md:pt-32 sm:pt-20">
+                <section className="border-none text-gray-400 bg-blueDark body-font mt-[-70px] pt-20 2xl:pt-56 lg:pt-52 md:pt-32 sm:pt-20">
                     <div id="quienesSomos" className="container px-5 py-24 mx-auto relative z-30">
                         <div className="flex flex-col text-center w-full mb-20">
                             <h1 className="text-4xl font-medium title-font mb-4 text-white"> &#191;Qui&#233;nes Somos&#63; </h1>
