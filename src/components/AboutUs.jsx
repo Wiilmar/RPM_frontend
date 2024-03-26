@@ -13,7 +13,7 @@ const AboutUs = () => {
                     {/* Relleno del path para la parte superior de la ola (blanco) */}
                     <path fill="#ffffff" fillOpacity="1" d="M0,0H1440V192L1380,176C1320,160,1200,128,1080,138.7C960,149,840,203,720,234.7C600,267,480,277,360,272C240,267,120,245,60,234.7L0,224V0Z"></path>
                 </svg>
-                <div id="quienesSomos" className="container px-5 py-24 mx-auto">
+                <div id="quienesSomos" className="container px-5 pb-24 pt-20 mb-8 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="text-4xl font-medium title-font mb-4 text-white"> &#191;Qui&#233;nes Somos&#63; </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">&#34;&#161;Conoce mas de nosotros&#33;&#34;</p>

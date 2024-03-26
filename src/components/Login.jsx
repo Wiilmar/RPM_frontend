@@ -24,7 +24,7 @@ const LoginAdmin = () => {
 
   return (
     <>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={ onSubmit }>
         <div className="min-h-screen flex items-center justify-center" style={{ backgroundImage: `url(${ pic_bgLogin })`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col" style={{ backgroundColor: '#FFFFFF', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)' }}>
             <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">Inicio sesión - Administrador</h2>
