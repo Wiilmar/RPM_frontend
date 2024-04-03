@@ -10,7 +10,6 @@ const Rutas = () => {
 
   const fetchRutas = async () => {
     const response = await getRutas();
-    console.log(response.data.ruta);
     setRutas(response.data.ruta);
   };
 
@@ -30,7 +29,7 @@ const Rutas = () => {
               <p className="text-gray-600 mb-1">Km totales: {ruta.KmTotalesRuta}</p>
               <p className="text-gray-600 mb-1">Presupuesto: {ruta.PresupuestoGas}</p>
               <p className="text-gray-600 mb-1">Fecha: {new Date(ruta.createdAt).toLocaleDateString()}</p>
-              <p className="text-gray-600 mb-1">Moto viajero: {ruta.motoviajero}</p>
+             
             </div>
           </div>
         </div>

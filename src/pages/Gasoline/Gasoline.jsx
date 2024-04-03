@@ -11,8 +11,7 @@ const Gasolina = () => {
   }, []);
 
   const fetchGasolina = async () => {
-    const response = await getGasoline();
-    console.log(response.data.PrecioGas);
+    const response = await getGasoline();    
     setGaso(response.data.PrecioGas);
   };
 

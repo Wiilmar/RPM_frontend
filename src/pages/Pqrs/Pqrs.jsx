@@ -16,7 +16,6 @@ const LasPreguntas = () => {
 
   const fetchPQRS = async () => {
     const response = await getPQRS();
-    console.log(response.data)
     setPqrs(response.data);
   };
 
