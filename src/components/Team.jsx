@@ -1,5 +1,5 @@
 //----- Importacion de imagenes
-import picTyecid from "../image/Home/pic_Tyecid.png"
+import picTyecid from "../image/Home/pic_Tyecid-min.png"
 import picTaldair from "../image/Home/pic_Taldair.png"
 import picTalvaro from "../image/Home/pic_Talvaro.png"
 import picTcamilo from "../image/Home/pic_Tcamilo.png"
