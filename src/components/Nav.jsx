@@ -21,10 +21,10 @@ const Nav = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#servicios" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Servicios</a>
-              <a href="#quienesSomos" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">&#191;Qui&#233;nes Somos&#63;</a>
-              <a href="#experiencias" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Experiencias</a>
-              <a href="#equipo" className="font-semibold text-black hover:text-white transition duration-300 ease-in-out">Nuestro Equipo</a>
+              <a href="#servicios" className="font-semibold text-md text-black hover:text-white transition duration-300 ease-in-out lg:text-lg">Servicios</a>
+              <a href="#quienesSomos" className="font-semibold text-md text-black hover:text-white transition duration-300 ease-in-out lg:text-lg">&#191;Qui&#233;nes Somos&#63;</a>
+              <a href="#experiencias" className="font-semibold text-md text-black hover:text-white transition duration-300 ease-in-out lg:text-lg">Experiencias</a>
+              <a href="#equipo" className="font-semibold text-md text-black hover:text-white transition duration-300 ease-in-out lg:text-lg">Nuestro Equipo</a>
             </div>
           </div>
           <button className="hidden md:block">
