@@ -16,9 +16,9 @@ import picGitHub from "../image/Home/pic_logoGithub.png"
 import picWP from "../image/Home/pic_logoWhatsapp.png"
 
 //Hover integrantes
-import picTyecidHover from "../image/Home/pic_MVYecid.png"
-import picTcristianHover from "../image/Home/A1_Prueba.png"
-import picTaldairHover from "../image/Home/A1_prueba2.png"
+import picTyecidHover from "../image/Home/picTdanielHover.png"
+import picTcristianHover from "../image/Home/picTdanielHover.png"
+import picTaldairHover from "../image/Home/picTdanielHover.png"
 import picTalvaroHover from "../image/Home/picTdanielHover.png"
 import picTwilmanHover from "../image/Home/picTdanielHover.png"
 import picTcamiloHover from "../image/Home/picTdanielHover.png"
@@ -45,8 +45,8 @@ const Team = () => {
             picOriginal: picTyecid,
             picHover: picTyecidHover,
             socialLinks: [
-                { href: "#", icon: picFB },
-                { href: "#", icon: picGitHub },
+                { href: "https://web.facebook.com/Devisitaporelmundo/?locale=es_LA&_rdc=1&_rdr", icon: picFB },
+                { href: "https://github.com/Moto-developer", icon: picGitHub },
                 { href: "https://www.instagram.com/yecidpardo/", icon: picIG }
             ]
         },
