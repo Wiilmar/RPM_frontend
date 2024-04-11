@@ -58,7 +58,7 @@ const Gasolina = () => {
                 </div>
               ) : (
                 <div>
-                  <p className="text-2xl font-bold mb-4">{gasoline.PrecioGas}</p>
+                  <p className="text-2xl font-bold mb-4">$ {gasoline.PrecioGas}</p>
                   {editingGasoline !== gasoline && (
                     <button onClick={() => handleEditClick(gasoline)} className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full py-2 px-4 rounded">Editar Precio Gasolina</button>
                   )}

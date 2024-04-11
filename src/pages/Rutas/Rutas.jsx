@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getRutas, deleteRutas } from "../../api/rutas";
+import Swal from 'sweetalert2';
 
 const Rutas = () => {
   const [rutas, setRutas] = useState([]);
@@ -17,13 +18,32 @@ const Rutas = () => {
   const handleDeleteRuta = async (id) => {
     try {
       await deleteRutas(id);
-      // Actualiza la lista de rutas después de la eliminación
       await fetchRutas();
-      alert("Ruta eliminada exitosamente");
+      Swal.fire({
+        icon: 'success',
+        title: 'Ruta eliminada',
+        text: 'La ruta ha sido eliminada exitosamente.',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Aceptar'
+      });
     } catch (error) {
       console.error("Error al eliminar la ruta:", error);
-      alert("Error al eliminar la ruta");
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al eliminar la ruta',
+        text: 'Ha ocurrido un error al intentar eliminar la ruta.',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Aceptar'
+      });
     }
+  };
+
+  const renderStars = (calificacion) => {
+    const stars = [];
+    for (let i = 0; i < calificacion; i++) {
+      stars.push(<span key={i} className="text-amarillo">&#9733;</span>);
+    }
+    return stars;
   };
 
   return (
@@ -37,18 +57,15 @@ const Rutas = () => {
                 <img src={ruta.FotoRuta} className="w-full h-48 object-cover" alt="Ruta" />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Nombre de la Ruta: {ruta.NombreRuta}</h2>
-                  <p className="text-gray-600 mb-1">Calificación: {ruta.CalificacionRuta}</p>
+                  <div className="text-gray-600 mb-1">Calificación: {renderStars(ruta.CalificacionRuta)}</div>
                   <p className="text-gray-600 mb-1">Descripción: {ruta.DescripcionRuta}</p>
-                  <p className="text-gray-600 mb-1">Km totales: {ruta.KmTotalesRuta}</p>
-                  <p className="text-gray-600 mb-1">Presupuesto: {ruta.PresupuestoGas}</p>
+                  <p className="text-gray-600 mb-1">Kilómetros Totales: {Math.round(ruta.KmTotalesRuta)}</p>
+                  <p className="text-gray-600 mb-1">Presupuesto: ${ruta.PresupuestoGas.toLocaleString('es-ES', { style: 'currency', currency: 'COP', minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
                   <p className="text-gray-600 mb-1">Fecha: {new Date(ruta.createdAt).toLocaleDateString()}</p>
                   <p className="text-gray-600 mb-1">Moto viajero: {ruta.motoviajero}</p>
-                  <button
-                    onClick={() => handleDeleteRuta(ruta._id)}
-                    className="absolute top-0 right-0 bg-red-500 text-white p-2 rounded-md hover:bg-red-600"
-                  >
-                    Eliminar
-                  </button>
+                </div>
+                <div className="flex justify-center items-center p-4">
+                  <button onClick={() => handleDeleteRuta(ruta._id)} className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">Eliminar</button>
                 </div>
               </div>
             </div>
