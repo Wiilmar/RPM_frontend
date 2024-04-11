@@ -1,9 +1,7 @@
 //Cosas importantes para que funcione
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AuthProvider } from './context/authContext'
 import { ProtectedRoute } from './protectedRoute'
-
 
 //Importes de componentes
 import Home from './pages/Home/Home'

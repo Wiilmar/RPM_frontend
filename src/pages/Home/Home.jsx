@@ -15,7 +15,6 @@ import Gallery from "../../components/Gallery"
 import Faq from "../../components/Faq"
 import ContactUs from "../../components/ContactUs"
 import Statistics from "../../components/Statistics"
-import Cookies from "../../components/Cookies"
 import Footer from "../../components/Footer"
 
 const Home = () => {
@@ -61,7 +60,6 @@ const Home = () => {
                     </button>
                 )}
             </section>
-            <Cookies />
             {/* ------------------- */}
         </>
     )
@@ -72,10 +70,9 @@ export default Home
 /*
 *TAREAS PENDIENTES 
 
-toDo: Cambiar el Footer - V.2 
 toDo: Hacer el manual de usuario
 toDO: Hacer validaciones o restricciones en el PQRS - Wilman
-toDo: Lograr que en apartado de estadisticas los numeros esten vinculados a su respectiva cantidad de la base de de datos
+
 toDO: Lograr que cuando el usuario haga hover en algunas de las cards de los integrantes de RPM este cambia por otra imagen
 toDO: Crear un nuevo componente que se llame 'Politicas' para que el usuairo pueda leer nuestras politicas y directrices en el apartado Web
 toDO: Crear las lineas curveadas de cada componente como esta establecido en el FIGMA.

@@ -23,7 +23,7 @@ const OurServices = () => {
                             <img className="lg:h-48 md:h-36 w-full object-cover object-center transition hover:-translate-y-2" src={picSRutas} alt="blog" />
                             <div className="p-6">
                                 <h1 className="title-font text-2xl text-white mb-3 font-bold"> Rutas </h1>
-                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-alain-left transition hover:text-blue-500">Nuestra app te permite explorar paisajes impresionantes, disfrutar de la libertad sobre dos ruedas y crear recuerdos inolvidables en cada ruta.</p>
+                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-alain-left transition">Nuestra app te permite explorar paisajes impresionantes, disfrutar de la libertad sobre dos ruedas y crear recuerdos inolvidables en cada ruta.</p>
                             </div>
                         </div>
                     </div>

@@ -20,14 +20,14 @@ const Gallery = () => {
                         <h1 className="sm:text-4xl text-4xl font-bold title-font mb-4 text-white pb-1 pt-10"> Únete a R.P.M. </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-justify pb-8 px-12 text-whiteDark">Descubre la aplicación de moto viajeros y explora el mundo en tu moto de manera emocionante. Planifica tus viajes eficientemente, encuentra rutas personalizadas y alojamiento acogedor. Conéctate con otros moto viajeros para compartir experiencias únicas y descubrir nuevos destinos fascinantes. ¡Descarga la aplicación ahora y vive la experiencia al máximo!</p>
                         <div className="flex justify-center mx-auto items-center flex-shrink-0 space-x-5 mb-9 bg-blueDark pb-5 px-6">
-                            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-300 focus:outline-none">
                                 <img src={logoPS} alt="Google Play" className="w-6 h-6" />
                                 <span className="ml-4 flex items-start flex-col leading-none">
                                     <span className="text-xs text-gray-600 mb-1">Descargar</span>
                                     <span className="title-font font-medium">Play Store</span>
                                 </span>
                             </button>
-                            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-300 focus:outline-none">
                                 <img src={logoApk} alt="Google Play" className="w-6 h-6" />
                                 <span className="ml-4 flex items-start flex-col leading-none">
                                     <span className="text-xs text-gray-600 mb-1">Descargar</span>
