@@ -18,51 +18,49 @@ const Footer = () => {
 
           <div className="flex mt-6 mb-5 justify-center">
             <a href="#" className="mx-2" aria-label="Reddit">
-              <img src={logoX} className="w-8 h-8 fill-current text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" alt="Reddit" />
+              <img src={logoX} className="w-8 h-8 rounded-full transition-all duration-300 transform hover:scale-110" alt="Reddit" />
             </a>
 
             <a href="#" className="mx-2" aria-label="Facebook">
-              <img src={logoIG} className="w-8 h-8 fill-current text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" alt="Facebook" />
+              <img src={logoIG} className="w-8 h-8 rounded-full transition-all duration-300 transform hover:scale-110" alt="Facebook" />
             </a>
 
             <a href="#" className="mx-2" aria-label="Github">
-              <img src={logoFB} className="w-8 h-8 fill-current text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" alt="Github" />
+              <img src={logoFB} className="w-8 h-8 rounded-full transition-all duration-300 transform hover:scale-110" alt="Github" />
             </a>
 
             <a href="#" className="mx-2" aria-label="Facebook">
-              <img src={logoIG} className="w-8 h-8 fill-current text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" alt="Facebook" />
+              <img src={logoIG} className="w-8 h-8 rounded-full transition-all duration-300 transform hover:scale-110" alt="Facebook" />
             </a>
-
           </div>
         </div>
 
         <div className="mt-6">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center">
             <div>
-              <h3 className="text-gray-700 uppercase dark:text-white">About</h3>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Company</a>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Community</a>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Careers</a>
+              <h3 className="text-gray-700 uppercase dark:text-white">Acerca de</h3>
+              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Nuestros servicios</a>
+              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Estadisticas</a>
+              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"></a>
             </div>
 
             <div>
-              <h3 className="text-gray-700 uppercase dark:text-white">Blog</h3>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Tech</a>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Music</a>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Videos</a>
+              <h3 className="text-gray-700 uppercase dark:text-white">Redes sociales</h3>
+              <a href="https://web.facebook.com/profile.php?id=61558147182570&locale=es_LA" target="_blank" rel="noopener noreferrer" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Facebook</a>
+              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Instagram</a>
+              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Twitter</a>
             </div>
 
             <div>
-              <h3 className="text-gray-700 uppercase dark:text-white">Products</h3>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Mega Cloud</a>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Aperion UI</a>
-              <a href="#" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Meraki UI</a>
+              <h3 className="text-gray-700 uppercase dark:text-white">Alianza</h3>
+              <a href="https://devisitaporelmundo.com" target="_blank" rel="noopener noreferrer" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">De visita por el mundo</a>
             </div>
 
             <div>
-              <h3 className="text-gray-700 uppercase dark:text-white">Contact</h3>
-              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+1 526 654 8965</span>
-              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">example@email.com</span>
+              <h3 className="text-gray-700 uppercase dark:text-white">Contactos</h3>
+              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+57 4238793 </span>
+              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+57 324 554 9821</span>
+              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">rpmescucha@gmail.com</span>
             </div>
           </div>
         </div>
@@ -70,7 +68,7 @@ const Footer = () => {
         <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
 
         <div>
-          <p className="text-center text-gray-500 dark:text-gray-400">© Brand 2020 - All rights reserved</p>
+          <p className="text-center text-gray-500 dark:text-gray-400">© RPM 2024 - Todos los derechos reservados</p>
         </div>
       </div>
     </footer>
