@@ -29,13 +29,15 @@ const Gallery = () => {
                                     </span>
                                 </button>
                             </a>
-                            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center justify-center sm:justify-start hover:bg-gray-300 focus:outline-none sm:ml-0 sm:mr-10">
-                                <img src={logoApk} alt="Google Play" className="w-6 h-6" />
-                                <span className="ml-4 flex items-start flex-col leading-none">
-                                    <span className="text-xs text-gray-600 mb-1">Descargar</span>
-                                    <span className="title-font font-medium">Apk</span>
-                                </span>
-                            </button>
+                            <a href="https://drive.google.com/file/d/1J99C6EdIgW3UlqrkQak3rvHXHwRHmz4f/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center justify-center sm:justify-start hover:bg-gray-300 focus:outline-none sm:ml-0 sm:mr-10">
+                                    <img src={logoApk} alt="Google Play" className="w-6 h-6" />
+                                    <span className="ml-4 flex items-start flex-col leading-none">
+                                        <span className="text-xs text-gray-600 mb-1">Descargar</span>
+                                        <span className="title-font font-medium">Apk</span>
+                                    </span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-wrap -m-4">

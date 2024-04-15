@@ -4,7 +4,7 @@
 //----- Importacion de imagenes
 import picSRutas from "../image/Home/pic_rutas2.webp"
 import picSPresupuesto from "../image/Home/pic_presupuesto2.webp"
-import picSMotoviajeros from "../image/Home/pic_motoviajeros2.jpg"
+import picSGaraje from "../image/Home/pic_garaje.jpg"
 
 const OurServices = () => {
     
@@ -39,13 +39,13 @@ const OurServices = () => {
                         </div>
                     </div>
                     {/* ------------------- */}
-                    {/* Tercera Card: Motoviajeros */}
+                    {/* Tercera Card: Garaje */}
                     <div className="p-4 md:w-1/3 ">
                     <div className="h-full border-2 rounded-2xl overflow-hidden border-black bg-blueLight transition hover:scale-105">
-                            <img className="lg:h-48 md:h-36 w-full object-cover object-center transition hover:-translate-y-2" src={ picSMotoviajeros }alt="blog" />               
+                            <img className="lg:h-48 md:h-36 w-full object-cover object-center transition hover:-translate-y-2" src={ picSGaraje }alt="blog" />               
                             <div className="p-6">
-                                <h1 className="title-font text-2xl text-white mb-3 font-bold"> Motoviajeros </h1>
-                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-alain-left">Nuestra app te ofrece una plataforma para conectar con otros motoviajeros, compartir experiencias, consejos y planificar viajes juntos.</p>
+                                <h1 className="title-font text-2xl text-white mb-3 font-bold"> Garaje </h1>
+                                <p className="leading-relaxed mb-3 text-xl text-whiteLight text-alain-left"> Nuestra aplicación te brinda un práctico espacio de garaje donde puedes registrar todas tus motocicletas de manera sencilla. Una vez registradas, podrás iniciar tu viaje con la moto de tu preferencia.</p>
                             </div>
                         </div>
                     </div>

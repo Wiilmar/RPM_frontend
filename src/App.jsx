@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard/Dashboard'
 import Login from './components/Login'
 import Preguntas from './pages/Pqrs/Pqrs'
 import TermsAndConditions from './components/TermsAndConditions'
+import Page404 from './components/Page404'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/pqrs" element={<Preguntas />} />
           <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
