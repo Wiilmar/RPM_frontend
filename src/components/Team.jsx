@@ -16,9 +16,9 @@ import picGitHub from "../image/Home/pic_logoGithub.png"
 import picWP from "../image/Home/pic_logoWhatsapp.png"
 
 //Hover integrantes
-import picTyecidHover from "../image/Home/picTdanielHover.png"
-import picTcristianHover from "../image/Home/picTdanielHover.png"
-import picTaldairHover from "../image/Home/picTdanielHover.png"
+import picTyecidHover from "../image/Home/pic_MVYecid.png"
+import picTcristianHover from "../image/Home/picTcristianHover.jpg"
+import picTaldairHover from "../image/Home/picTaldairHover.png"
 import picTalvaroHover from "../image/Home/picTdanielHover.png"
 import picTwilmanHover from "../image/Home/picTwilmanHover.jpg"
 import picTcamiloHover from "../image/Home/picTdanielHover.png"
