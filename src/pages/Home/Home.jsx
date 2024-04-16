@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 
 //----- Importacion de imagenes
-// Ninguna por el momento
+import picManual from './Elementos/pic_IconManual.png'
 
 //----- Importacion de componentes
 import Nav from "../../components/Nav"
@@ -53,11 +53,21 @@ const Home = () => {
             {/* Boton para que el usuario sea enviado al principio de la pagina */}
             <section>
                 {visible && (
-                    <button onClick={scroll} className={'z-50 fixed bottom-8 right-8 bg-blueLightTwo text-white px-2 py-2 rounded-full transition-transform duration-300 hover:text-black hover:bg-yellowLightTwo hover:scale-110'}>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-15 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeWidth={1} d="M16 15a1 1 0 0 1-.707-.293L12 11.414l-3.293 3.293a1 1 0 1 1-1.414-1.414l4-4a1 1 0 0 1 1.414 0l4 4A1 1 0 0 1 16 15z" />
-                        </svg>
-                    </button>
+                    <>
+                        {/* Botón en la parte inferior derecha */}
+                        <button onClick={scroll} className={'z-50 fixed bottom-8 right-8 bg-blueLightTwo text-white px-2 py-2 rounded-full transition-transform duration-300 hover:text-black hover:bg-yellowLightTwo hover:scale-110'}>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-15 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeWidth={1} d="M16 15a1 1 0 0 1-.707-.293L12 11.414l-3.293 3.293a1 1 0 1 1-1.414-1.414l4-4a1 1 0 0 1 1.414 0l4 4A1 1 0 0 1 16 15z" />
+                            </svg>
+                        </button>
+
+                        {/* Botón en la parte inferior izquierda */}
+                        <a href="./Elementos/fundamentos.pdf" download>
+                            <button className={'z-50 fixed bottom-8 left-8 bg-blueLightTwo text-white px-2 py-2 rounded-full transition-transform duration-300 hover:text-black hover:bg-yellowLightTwo hover:scale-110'}>
+                                <img src={picManual} className="h-15 w-12" alt="Manual de Usuario" />
+                            </button>
+                        </a>
+                    </>
                 )}
             </section>
             {/* ------------------- */}
