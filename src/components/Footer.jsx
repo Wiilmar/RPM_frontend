@@ -10,11 +10,8 @@ const Footer = () => {
       <div className="container p-6 mx-auto">
         <div className="flex flex-col items-center">
           <div className="px-6 pt-6 text-center">
-        
-              <img className="w-auto h-14 mb-4 mx-auto" src={logoRPM} alt="" />
-            
-
-            <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Agradecemos el apoyo recibido. Sin ustedes, nuestro proyecto Rpm no habría sido posible. <br /> ¡Gracias por creer en nosotros!</p>
+            <img className="w-auto h-14 mb-4 mx-auto" src={logoRPM} alt="" />
+            <p className="max-w-sm mt-2 text-justify text-gray-500 dark:text-gray-400">Agradecemos el apoyo recibido. Sin ustedes, nuestro proyecto Rpm no habría sido posible. <br /> ¡Gracias por creer en nosotros!</p>
           </div>
 
           <div className="flex mt-6 mb-5 justify-center">
@@ -23,15 +20,15 @@ const Footer = () => {
             </a>
 
             <a href="https://www.sena.edu.co/es-co/formacion/paginas/tecnologia-innovacion.aspx" target="_blank" rel="noopener noreferrer" className="mx-2" >
-              <img src={logoSennova} className="w-28 h-10  transition-all duration-300 transform hover:scale-110"  />
+              <img src={logoSennova} className="w-28 h-10  transition-all duration-300 transform hover:scale-110" />
             </a>
 
             <a href="https://web.facebook.com/Devisitaporelmundo/?locale=es_LA&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="mx-2" >
-              <img src={logoDeVisitaPorElMundo} className="w-10 h-10  transition-all duration-300 transform hover:scale-110"  />
+              <img src={logoDeVisitaPorElMundo} className="w-10 h-10  transition-all duration-300 transform hover:scale-110" />
             </a>
 
-              <img src={logoDev} className="w-10 h-11 ml-1 rounded-full transition-all duration-300 transform hover:scale-110" style={{ paddingTop: '-12px' }}  />
-           
+            <img src={logoDev} className="w-10 h-11 ml-1 rounded-full transition-all duration-300 transform hover:scale-110" style={{ paddingTop: '-12px' }} />
+
           </div>
         </div>
 
