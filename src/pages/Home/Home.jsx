@@ -62,8 +62,8 @@ const Home = () => {
                         </button>
 
                         {/* Botón en la parte inferior izquierda */}
-                        <a href="./Elementos/fundamentos.pdf" download>
-                            <button className={'z-50 fixed bottom-8 left-8 bg-blueLightTwo text-white px-2 py-2 rounded-full transition-transform duration-300 hover:text-black hover:bg-yellowLightTwo hover:scale-110'}>
+                        <a href="https://drive.google.com/file/d/1zJ0Y_YTSnCHDiVkqeyCFU_6gydVVyqc7/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                            <button className="z-50 fixed bottom-8 left-8 bg-blueLightTwo text-white px-2 py-2 rounded-full transition-transform duration-300 hover:text-black hover:bg-yellowLightTwo hover:scale-110">
                                 <img src={picManual} className="h-15 w-12" alt="Manual de Usuario" />
                             </button>
                         </a>
@@ -76,12 +76,3 @@ const Home = () => {
 }
 
 export default Home
-
-/*
-*TAREAS PENDIENTES 
-
-toDo: Hacer el manual de usuario
-toDO: Hacer validaciones o restricciones en el PQRS - Wilman
-toDO: Crear las lineas curveadas de cada componente como esta establecido en el FIGMA.
--------------------------------------------------
-*/
