@@ -19,21 +19,25 @@ const Gallery = () => {
                     <div id='download' className="flex flex-col text-center w-auto mb-9 bg-blueDark rounded-2xl">
                         <h1 className="sm:text-4xl text-4xl font-bold title-font mb-4 text-white pb-1 pt-10"> Únete a R.P.M. </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-justify pb-8 px-12 text-whiteDark">Descubre la aplicación de moto viajeros y explora el mundo en tu moto de manera emocionante. Planifica tus viajes eficientemente, encuentra rutas personalizadas y alojamiento acogedor. Conéctate con otros moto viajeros para compartir experiencias únicas y descubrir nuevos destinos fascinantes. ¡Descarga la aplicación ahora y vive la experiencia al máximo!</p>
-                        <div className="flex justify-center mx-auto items-center flex-shrink-0 space-x-5 mb-9 bg-blueDark pb-5 px-6">
-                            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-300 focus:outline-none">
-                                <img src={logoPS} alt="Google Play" className="w-6 h-6" />
-                                <span className="ml-4 flex items-start flex-col leading-none">
-                                    <span className="text-xs text-gray-600 mb-1">Descargar</span>
-                                    <span className="title-font font-medium">Play Store</span>
-                                </span>
-                            </button>
-                            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-300 focus:outline-none">
-                                <img src={logoApk} alt="Google Play" className="w-6 h-6" />
-                                <span className="ml-4 flex items-start flex-col leading-none">
-                                    <span className="text-xs text-gray-600 mb-1">Descargar</span>
-                                    <span className="title-font font-medium">Apk</span>
-                                </span>
-                            </button>
+                        <div className="flex justify-center mx-auto items-center flex-shrink-0 space-x-5 mb-9 bg-blueDark pb-5 px-6 flex-col sm:flex-row">
+                            <a href="https://play.google.com/store/apps?hl=es_CO&gl=US" target="_blank" rel="noopener noreferrer">
+                                <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-300 focus:outline-none mb-4 sm:mb-0">
+                                    <img src={logoPS} alt="Google Play" className="w-6 h-6" />
+                                    <span className="ml-4 flex items-start flex-col leading-none">
+                                        <span className="text-xs text-gray-600 mb-1">Descargar</span>
+                                        <span className="title-font font-medium">Play Store</span>
+                                    </span>
+                                </button>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1J99C6EdIgW3UlqrkQak3rvHXHwRHmz4f/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center justify-center sm:justify-start hover:bg-gray-300 focus:outline-none sm:ml-0 sm:mr-10">
+                                    <img src={logoApk} alt="Google Play" className="w-6 h-6" />
+                                    <span className="ml-4 flex items-start flex-col leading-none">
+                                        <span className="text-xs text-gray-600 mb-1">Descargar</span>
+                                        <span className="title-font font-medium">Apk</span>
+                                    </span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-wrap -m-4">

@@ -1,32 +1,69 @@
+import logoRPM from "../image/Home/logoprueba.png"
 import logoSena from "../image/Home/pic_logoSena.png"
-import logoIG from "../image/Home/pic_logoInstagram.png"
-import logoX from "../image/Home/pic_logoX.png"
-import logoFB from "../image/Home/pic_logoFacebook.png"
+import logoSennova from "../image/Home/pic_logoSennova.webp"
+import logoDeVisitaPorElMundo from "../image/Home/pic_logoDVEM.png"
+import logoDev from "../image/Home/pic_logoDev.png"
 
 const Footer = () => {
-  return(
-    <footer className="bg-black py-8 bottom-0 left-0 right-0">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0">
-          <h2 className="text-white text-3xl font-bold mb-2">RPM</h2>
-          <div className="flex flex-col">
-            <a href="#" className="text-gray-300 text-xl hover:text-white">Nosotros</a>
-            <a href="#" className="text-gray-300 text-xl hover:text-white">&#191;Qui&#233;nes Somos&#63;</a>
-            <a href="#" className="text-gray-300 text-xl hover:text-white">Nuestro Equipo</a>
-            <a href="#" className="text-gray-300 text-xl hover:text-white">Experiencias</a>
+  return (
+    <footer className="bg-white dark:bg-gray-900">
+      <div className="container p-6 mx-auto">
+        <div className="flex flex-col items-center">
+          <div className="px-6 pt-6 text-center">
+        
+              <img className="w-auto h-14 mb-4 mx-auto" src={logoRPM} alt="" />
+            
+
+            <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Agradecemos el apoyo recibido. Sin ustedes, nuestro proyecto Rpm no habría sido posible. <br /> ¡Gracias por creer en nosotros!</p>
+          </div>
+
+          <div className="flex mt-6 mb-5 justify-center">
+            <a href="https://web.facebook.com/CTPISENACauca/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="mx-2" >
+              <img src={logoSena} className="w-10 h-10 transition-all duration-300 transform hover:scale-110" />
+            </a>
+
+            <a href="https://www.sena.edu.co/es-co/formacion/paginas/tecnologia-innovacion.aspx" target="_blank" rel="noopener noreferrer" className="mx-2" >
+              <img src={logoSennova} className="w-28 h-10  transition-all duration-300 transform hover:scale-110"  />
+            </a>
+
+            <a href="https://web.facebook.com/Devisitaporelmundo/?locale=es_LA&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="mx-2" >
+              <img src={logoDeVisitaPorElMundo} className="w-10 h-10  transition-all duration-300 transform hover:scale-110"  />
+            </a>
+
+              <img src={logoDev} className="w-10 h-11 ml-1 rounded-full transition-all duration-300 transform hover:scale-110" style={{ paddingTop: '-12px' }}  />
+           
           </div>
         </div>
-        <div className="mb-4 md:mb-0">
-          <h2 className="text-white text-3xl font-bold mb-4">Síguenos</h2>
-          <div className="flex">
-            <a href="https://www.instagram.com/not.denail/" target="_blank" className="mr-4"><img src={logoIG} className="h-10 md:h-8"/></a>
-            <a href="#" target="_blank" className="mr-4"><img src={logoX} className="h-10 md:h-8"/></a>
-            <a href="https://www.facebook.com/danielLubor?mibextid=ZbWKwL" target="_blank" ><img src={logoFB} className="h-10 md:h-8"/></a>
+
+        <div className="mt-6">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 text-center">
+            <div>
+              <h3 className="text-gray-700 uppercase dark:text-white">Redes sociales</h3>
+              <a href="https://web.facebook.com/profile.php?id=61558147182570&locale=es_LA" target="_blank" rel="noopener noreferrer" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Facebook</a>
+              <a href="https://www.instagram.com/proyecto_rpm/" target="_blank" rel="noopener noreferrer" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Instagram</a>
+              <a href="https://twitter.com/proyecto_rpm24" target="_blank" rel="noopener noreferrer" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Twitter</a>
+            </div>
+
+            <div>
+              <h3 className="text-gray-700 uppercase dark:text-white">Alianza</h3>
+              <a href="https://devisitaporelmundo.com" target="_blank" rel="noopener noreferrer" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">De visita por el mundo</a>
+              <a href="https://www.instagram.com/xara_biker?igsh=MXI3d3p0OWhyMjV6Zg==" target="_blank" rel="noopener noreferrer" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Xara_Biker</a>
+            </div>
+
+            <div>
+              <h3 className="text-gray-700 uppercase dark:text-white">Contactos</h3>
+              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+57 4238793 </span>
+              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">+57 324 554 9821</span>
+              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">rpmescucha@gmail.com</span>
+            </div>
           </div>
         </div>
-          <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank">
-            <img src={ logoSena } className="h-16 " />
-          </a>          
+
+        <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
+
+        <div>
+          <p className="text-center text-gray-500 dark:text-gray-400">© RPM 2024 - Todos los derechos reservados</p>
+        </div>
       </div>
     </footer>
   )
