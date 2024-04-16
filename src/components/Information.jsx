@@ -25,7 +25,7 @@ const Information = () => {
             <h1 className="title-font sm:text-4xl text-4xl mb-4 font-medium text-black">Rutas Para Moteros</h1>
             <p className="mb-8 leading-relaxed text-black sm:text-xl text-xl">&#34;Descubre nuevas emociones en dos ruedas con R.P.M.<br className="hidden lg:inline-block" /> ¡La guía definitiva para explorar el mundo en moto&#33;&#34;</p>
             <div className="flex justify-center z-10">
-              <a href="https://drive.google.com/file/d/1J99C6EdIgW3UlqrkQak3rvHXHwRHmz4f/view?usp=sharing" target="_blank"><button  className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-blueLight hover:text-white font-bold rounded text-lg">Descargar</button></a>
+              <a href="#download"><button className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-blueLight hover:text-white font-bold rounded text-lg">Descargar</button></a>
               <a href="#Contactanos"><button className="ml-4 inline-flex text-white border-2 border-white py-2 px-6 focus:outline-none hover:bg-white-100 hover:text-black hover:border-black rounded text-lg">Cont&#225;ctanos</button></a>
             </div>
           </div>
