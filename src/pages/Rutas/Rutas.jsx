@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getRutas, deleteRutas } from "../../api/rutas";
+import { getRutas, deleteRutas, getMotoviajeroPorId } from "../../api/rutas";
 import Swal from 'sweetalert2';
 
 const Rutas = () => {
@@ -11,9 +11,17 @@ const Rutas = () => {
 
   const fetchRutas = async () => {
     const response = await getRutas();
-    setRutas(response.data.ruta);
+    const rutasWithMotoviajerName = await Promise.all(
+      response.data.ruta.map(async (ruta) => {
+        const motoviajero = await getMotoviajeroPorId(ruta.motoviajero);
+        return {
+          ...ruta,
+          motoviajeroNombre: motoviajero.data.Nombres_Mv, 
+        };
+      })
+    );
+    setRutas(rutasWithMotoviajerName);
   };
-
   const handleDeleteRuta = async (id) => {
     try {
       await deleteRutas(id);
@@ -23,7 +31,7 @@ const Rutas = () => {
         title: 'Ruta eliminada',
         text: 'La ruta ha sido eliminada exitosamente.',
         confirmButtonColor: '#3085d6',
-        confirmButtonText: 'Aceptar'
+        confirmButtonText: 'Aceptar',
       });
     } catch (error) {
       console.error("Error al eliminar la ruta:", error);
@@ -32,7 +40,7 @@ const Rutas = () => {
         title: 'Error al eliminar la ruta',
         text: 'Ha ocurrido un error al intentar eliminar la ruta.',
         confirmButtonColor: '#3085d6',
-        confirmButtonText: 'Aceptar'
+        confirmButtonText: 'Aceptar',
       });
     }
   };
@@ -61,7 +69,7 @@ const Rutas = () => {
                   <p className="text-gray-600 mb-1">Kilómetros Totales: {Math.round(ruta.KmTotalesRuta)}</p>
                   <p className="text-gray-600 mb-1">Presupuesto: ${ruta.PresupuestoGas.toLocaleString('es-ES', { style: 'currency', currency: 'COP', minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
                   <p className="text-gray-600 mb-1">Fecha: {new Date(ruta.createdAt).toLocaleDateString()}</p>
-                  <p className="text-gray-600 mb-1">Moto viajero: {ruta.motoviajero}</p>
+                  <p className="text-gray-600 mb-1">Moto viajero: {ruta.motoviajeroNombre}</p>
                 </div>
                 <div className="flex justify-center items-center p-4">
                   <button onClick={() => handleDeleteRuta(ruta._id)} className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">Eliminar</button>
