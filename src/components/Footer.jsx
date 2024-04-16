@@ -11,7 +11,9 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <div className="px-6 pt-6 text-center">
             <img className="w-auto h-14 mb-4 mx-auto" src={logoRPM} alt="" />
-            <p className="max-w-sm mt-2 text-justify text-gray-500 dark:text-gray-400">Agradecemos el apoyo recibido. Sin ustedes, nuestro proyecto Rpm no habría sido posible. <br /> ¡Gracias por creer en nosotros!</p>
+            <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
+              Agradecemos el apoyo recibido. Sin ustedes, nuestro proyecto Rpm no habría sido posible. <br /> ¡Gracias por creer en nosotros!
+            </p>
           </div>
 
           <div className="flex mt-6 mb-5 justify-center">
