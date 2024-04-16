@@ -43,6 +43,7 @@ const Home = () => {
             <OurServices />
             <AboutUs />
             <OurExperiences />
+            <Gallery />
             <Statistics />
             <Gallery />
             <Faq />

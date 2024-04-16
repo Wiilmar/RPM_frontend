@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import pic_404 from '../image/Home/pic_404.jpg'
+import pic_404 from '../image/Home/pic_404.png'
 
 const Page404 = () => {
     return (

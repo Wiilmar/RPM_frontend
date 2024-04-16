@@ -8,8 +8,15 @@ import pic_galleryD from '../image/Home/pic_galleryD.jpg'
 import pic_galleryE from '../image/Home/pic_galleryE.jpg'
 import pic_galleryF from '../image/Home/pic_galleryF.jpg'
 import pic_bgGallery from '../image/Home/pic_bgGallery.jpg'
+// import { useDownloadContext } from '../context/DownloadContext';
 
 const Gallery = () => {
+    // const { incrementDownloadCount } = useDownloadContext();
+
+    // const handleDownloadClick = () => {
+    //     incrementDownloadCount();
+    // };
+
     return (
         <>
             <section className="text-gray-600 body-font" style={{
